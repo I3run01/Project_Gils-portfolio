@@ -8,6 +8,10 @@ export const LeftMenuBar = () =>{
 
     const [menuOpen, setMenuOpen] = useState<string>('opened')
 
+    const changeTheme = () => {
+        
+    }
+
 
     const handleMenuButton = () => {
         menuOpen === 'opened' ? setMenuOpen('closed') :  setMenuOpen('opened')
@@ -39,7 +43,7 @@ export const LeftMenuBar = () =>{
                     </div>
                 </div>
                 <div id="themeIcon">
-                    <div onClick={}>
+                    <div onClick={changeTheme}>
                         <img src="menuIcons/Moon.svg" alt="" />
                         <h2>Escuro</h2>
                     </div>  
