@@ -78,7 +78,7 @@ export const LeftMenuBarStyled = styled.div<props>`
 
                     img {
                         filter: ${props => props.theme === 'dark' ?
-                        'saturate(200%) brightness(120%) opacity(40%)':
+                        'saturate(200%) opacity(40%)':
                         'saturate(100%)'
                         };
                     }  
@@ -95,7 +95,7 @@ export const LeftMenuBarStyled = styled.div<props>`
             img {
                 margin-left: 20px;
                 width: 40px;
-                filter: saturate(0) invert(${props => props.theme === 'dark' ? 1 : 0});  
+                filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});  
             }
 
             h2 {

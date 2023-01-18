@@ -7,6 +7,9 @@ type props = {
 
 const darkThemeMenuColor = '#ffff'
 const lightThemeMenuColor = '#000000'
+const lightPurpleColor = '#590099'
+const darkPurpleColor = '#CFBDDB'
+
 
 export const IconRightMenuBarStyled = styled.div<props>`
     position: fixed;
@@ -25,7 +28,7 @@ export const IconRightMenuBarStyled = styled.div<props>`
         width: 40px;
         height: 3px;
         background-color: ${props => props.onHover ? 
-        '#001D66' : 
+        props.theme === 'dark' ? darkPurpleColor : lightPurpleColor :
         props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor};
         transition: all 0.5s ease-in-out;
 
