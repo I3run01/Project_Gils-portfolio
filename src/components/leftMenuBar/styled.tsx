@@ -1,8 +1,17 @@
 import styled from "styled-components";
 
-const widthMenu = '250px'
+type props = {
+    theme: 'dark' | 'light'
+}
 
-export const LeftMenuBarStyled = styled.div`
+const widthMenu = '250px'
+const fontColorDark = 'white'
+const fontColorLight = 'black'
+
+
+
+
+export const LeftMenuBarStyled = styled.div<props>`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
     #burguerMenu {
@@ -45,7 +54,8 @@ export const LeftMenuBarStyled = styled.div`
             img {
                 margin-left: 20px;
                 width: 40px;
-                filter: saturate(0);
+                filter: saturate(0) invert(${props => props.theme === 'dark' ? 1 : 0});
+
 
                 :hover {
                     cursor: pointer;
@@ -55,6 +65,9 @@ export const LeftMenuBarStyled = styled.div`
 
             h2 {
                 margin-right: 20px;
+                font-family: 'dosis';
+                font-size: 24px;
+                color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
             }
         } 
 

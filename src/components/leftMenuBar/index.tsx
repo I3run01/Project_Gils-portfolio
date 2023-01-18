@@ -1,10 +1,13 @@
 import { LeftMenuBarStyled } from "./styled"
 import { BurguerMenu } from "./BurgerMenu"
-import { useContext, useEffect, useState } from "react"
+import {useContext, useState } from "react"
 import { Context } from "../../contexts/Context"
 
 export const LeftMenuBar = () =>{
+    const {state, dispatch} = useContext(Context)
+
     const [menuOpen, setMenuOpen] = useState<string>('opened')
+
 
     const handleMenuButton = () => {
         menuOpen === 'opened' ? setMenuOpen('closed') :  setMenuOpen('opened')
