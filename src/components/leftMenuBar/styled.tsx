@@ -64,7 +64,6 @@ export const LeftMenuBarStyled = styled.div<props>`
                         border: 1px solid black;
                         transition: .5s;
                         opacity: 0;
-                        
                     }
 
                 :hover::after {
@@ -78,11 +77,11 @@ export const LeftMenuBarStyled = styled.div<props>`
                     
 
                     img {
-                        filter: saturate(100%);
+                        filter: saturate(${props => props.theme === 'dark' ? '40' : '100%'});
                     }  
                     
                     h2 {
-                        color: #590099;
+                        color: ${props => props.theme === 'dark' ? darkPurpleColor : lightPurpleColor};
                         
                     }
 
