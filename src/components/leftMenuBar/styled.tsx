@@ -67,11 +67,7 @@ export const LeftMenuBarStyled = styled.div<props>`
             img {
                 margin-left: 20px;
                 width: 40px;
-                filter: saturate(0) invert(${props => props.theme === 'dark' ? 1 : 0});
-                transition: all 0.5s ease-in-out;
-
-
-                
+                filter: saturate(0) invert(${props => props.theme === 'dark' ? 1 : 0});  
             }
 
             h2 {
@@ -79,7 +75,6 @@ export const LeftMenuBarStyled = styled.div<props>`
                 font-family: 'dosis';
                 font-size: 24px;
                 color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
-                transition: all 0.5s ease-in-out;
             }
         } 
 
