@@ -60,8 +60,8 @@ export const LeftMenuBarStyled = styled.div<props>`
                         position: absolute;
                         left: 50%;
                         right: 50%;
-                        bottom: -5px;
-                        border: 1px solid black;
+                        bottom: -8px;
+                        border: 2px solid ${props => props.theme === 'dark' ? darkPurpleColor : lightPurpleColor};
                         transition: .5s;
                         opacity: 0;
                     }
@@ -77,7 +77,10 @@ export const LeftMenuBarStyled = styled.div<props>`
                     
 
                     img {
-                        filter: saturate(${props => props.theme === 'dark' ? '40' : '100%'});
+                        filter: ${props => props.theme === 'dark' ?
+                        'saturate(200%) brightness(120%) opacity(40%)':
+                        'saturate(100%)'
+                        };
                     }  
                     
                     h2 {
