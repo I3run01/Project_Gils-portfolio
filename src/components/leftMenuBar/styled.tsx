@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const widthMenu = '250px'
+
 export const LeftMenuBarStyled = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
@@ -17,7 +19,7 @@ export const LeftMenuBarStyled = styled.div`
         justify-content: space-between;
         height: 100vh;
         box-shadow: 1px 1px 1px black;
-        width: 250px;
+        width: ${widthMenu};
         transition: all 0.5s ease-in-out;
 
         /* From https://css.glass */
@@ -29,15 +31,38 @@ export const LeftMenuBarStyled = styled.div`
 
         #AboutIcon, #workIcon, #themeIcon {
 
+            overflow: hidden;
+            
+            div {
+                width: ${widthMenu};
+                display: flex;
+                justify-content: space-between;
+
+                margin-bottom:20px;
+                margin-top:20px;
+            }
+
             img {
                 margin-left: 20px;
                 width: 40px;
+                filter: saturate(0);
+
+                :hover {
+                    cursor: pointer;
+                    filter: saturate(100%);
+                }
+            }
+
+            h2 {
+                margin-right: 20px;
             }
         } 
 
 
         #AboutIcon {
-            height: 20%;
+            height: 15%;
+
+            
 
         }
 
@@ -50,12 +75,13 @@ export const LeftMenuBarStyled = styled.div`
         }
 
         #themeIcon {
-            height: 20%;
+            height: 15%;
+            
         }
     }
 
     //animation
     .closed {
-        width: 60px;
+        width: 80px;
     }
 `
