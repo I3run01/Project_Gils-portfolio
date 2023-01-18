@@ -50,8 +50,13 @@ export const LeftMenuBarStyled = styled.div<props>`
                 margin-bottom:20px;
                 margin-top:20px;
 
+                position: relative;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+
                 :hover {
                     cursor: pointer;
+                    
 
                     img {
                         filter: saturate(100%);
@@ -59,9 +64,9 @@ export const LeftMenuBarStyled = styled.div<props>`
                     
                     h2 {
                         color: #590099;
+                        
                     }
-                }
-                    
+                }        
             }
 
             img {
