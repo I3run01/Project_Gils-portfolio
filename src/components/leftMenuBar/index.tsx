@@ -39,7 +39,7 @@ export const LeftMenuBar = () =>{
                     </div>
                 </div>
                 <div id="themeIcon">
-                    <div>
+                    <div onClick={}>
                         <img src="menuIcons/Moon.svg" alt="" />
                         <h2>Escuro</h2>
                     </div>  

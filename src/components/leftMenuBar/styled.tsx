@@ -49,6 +49,19 @@ export const LeftMenuBarStyled = styled.div<props>`
 
                 margin-bottom:20px;
                 margin-top:20px;
+
+                :hover {
+                    cursor: pointer;
+
+                    img {
+                        filter: saturate(100%);
+                    }  
+                    
+                    h2 {
+                        color: #590099;
+                    }
+                }
+                    
             }
 
             img {
@@ -57,10 +70,7 @@ export const LeftMenuBarStyled = styled.div<props>`
                 filter: saturate(0) invert(${props => props.theme === 'dark' ? 1 : 0});
 
 
-                :hover {
-                    cursor: pointer;
-                    filter: saturate(100%);
-                }
+                
             }
 
             h2 {
