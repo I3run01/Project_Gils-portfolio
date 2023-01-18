@@ -20,16 +20,42 @@ export const LeftMenuBarStyled = styled.div`
         width: 250px;
         transition: all 0.5s ease-in-out;
 
-                /* From https://css.glass */
+        /* From https://css.glass */
         background: rgba(255, 255, 255, 0.4);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5.2px);
         -webkit-backdrop-filter: blur(5.2px);
         border: 1px solid rgba(255, 255, 255, 0.34);
+
+        #AboutIcon, #workIcon, #themeIcon {
+
+            img {
+                margin-left: 20px;
+                width: 40px;
+            }
+        } 
+
+
+        #AboutIcon {
+            height: 20%;
+
+        }
+
+        #workIcon {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        #themeIcon {
+            height: 20%;
+        }
     }
 
     //animation
     .closed {
-        width: 0px;
+        width: 60px;
     }
 `
