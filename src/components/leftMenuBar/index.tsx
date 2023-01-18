@@ -9,8 +9,23 @@ export const LeftMenuBar = () =>{
     const [menuOpen, setMenuOpen] = useState<string>('opened')
 
     const changeTheme = () => {
-        
+        if( state.theme.status === 'dark' ) {
+            dispatch({
+                type: 'changeTheme',
+                payload: {
+                    status: 'light'
+                }
+            })
+        } else {
+            dispatch({
+                type: 'changeTheme',
+                payload: {
+                    status: 'dark'
+                }
+            })
+        }
     }
+    
 
 
     const handleMenuButton = () => {
