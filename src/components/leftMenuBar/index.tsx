@@ -34,7 +34,10 @@ export const LeftMenuBar = () =>{
 
 
     return (
-        <LeftMenuBarStyled className={menuOpen}>
+        <LeftMenuBarStyled 
+        theme={state.theme.status}
+        className={menuOpen
+        }>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>
                 <div id="AboutIcon">
