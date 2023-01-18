@@ -107,6 +107,15 @@ export const LeftMenuBarStyled = styled.div<props>`
 
     //animation
     .closed {
-        width: 80px;
+        width: 0px;
+    }
+
+    @media screen and (min-width: 1000px){
+
+        //animation
+        .closed {
+            width: 80px;
+        }
+        
     }
 `
