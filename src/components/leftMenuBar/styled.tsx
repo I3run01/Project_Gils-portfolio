@@ -7,6 +7,8 @@ type props = {
 const widthMenu = '250px'
 const fontColorDark = 'white'
 const fontColorLight = 'black'
+const lightPurpleColor = '#590099'
+const darkPurpleColor = '#CFBDDB'
 
 
 
@@ -52,7 +54,24 @@ export const LeftMenuBarStyled = styled.div<props>`
 
                 position: relative;
                 text-decoration: none;
-                transition: all 0.5s ease-in-out;
+
+                ::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        right: 50%;
+                        bottom: -5px;
+                        border: 1px solid black;
+                        transition: .5s;
+                        opacity: 0;
+                        
+                    }
+
+                :hover::after {
+                    left: 5%;
+                    right: 5%;
+                    opacity: 100%;
+                }
 
                 :hover {
                     cursor: pointer;
@@ -66,7 +85,9 @@ export const LeftMenuBarStyled = styled.div<props>`
                         color: #590099;
                         
                     }
-                }        
+
+                }
+                    
             }
 
             img {
