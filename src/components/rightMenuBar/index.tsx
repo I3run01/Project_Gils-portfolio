@@ -25,12 +25,10 @@ export const RightMenuBar = () => {
             ftcion={closerOrOpenMenu}/>
             <div className={`container ${sideMenhOpenedOrClosed}`}>
                 <div className="Icons">
-                    <a href="https://t.me/I3run01" target="_black"><TelegramIcon/></a>
-                    <a href="https://api.whatsapp.com/send?phone=5541995686185" target="_black"><WhatsAppIcon/></a>
-                    <a href="https://www.linkedin.com/in/i3run01/" target="_black"><LinkedInIcon/></a>
-                    <a href="https://github.com/I3run01" target="_black"><GitHubIcon/></a>
+                    <a href="https://api.whatsapp.com/send?phone=5515981030949" target="_black"><WhatsAppIcon/></a>
+                    <a href="https://www.linkedin.com/in/gilchaves/" target="_black"><LinkedInIcon/></a>
                     <a href='#'><CvIcon/></a>
-                    <a href="#" target="_black"><InstagramIcon/></a>
+                    <a href="https://www.instagram.com/gilapchaves/" target="_black"><InstagramIcon/></a>
                 </div>
                 <div className="topLine"></div>
                 <div className="bottomLine"></div>
