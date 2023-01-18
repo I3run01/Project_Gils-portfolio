@@ -15,28 +15,17 @@ export const LeftMenuBarStyled = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #7199FF;
         height: 100vh;
         box-shadow: 1px 1px 1px black;
         width: 250px;
         transition: all 0.5s ease-in-out;
 
-        a {
-            font-family: 'Dosis', sans-serif;
-            font-size: 32px;
-            color: #ffff;
-            padding-bottom: 60px;
-            margin-left: 10px;
-            white-space: nowrap;
-            :hover {
-                color: #001D66;
-            }
-            overflow-x: hidden;
-            
-            :hover {
-                cursor: pointer;
-            }
-        } 
+                /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.2px);
+        -webkit-backdrop-filter: blur(5.2px);
+        border: 1px solid rgba(255, 255, 255, 0.34);
     }
 
     //animation
