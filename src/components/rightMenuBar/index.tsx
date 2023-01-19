@@ -27,7 +27,7 @@ export const RightMenuBar = () => {
                 <div className="Icons">
                     <a href="https://api.whatsapp.com/send?phone=5515981030949" target="_black"><WhatsAppIcon/></a>
                     <a href="https://www.linkedin.com/in/gilchaves/" target="_black"><LinkedInIcon/></a>
-                    <a href='#'><CvIcon/></a>
+                    <a href='CV/CV - Gil Chaves.pdf'><CvIcon/></a>
                     <a href="https://www.instagram.com/gilapchaves/" target="_black"><InstagramIcon/></a>
                 </div>
                 <div className="topLine"></div>
