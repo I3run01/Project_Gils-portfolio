@@ -34,7 +34,7 @@ export const BurguerMenuStyled = styled.div<Props>`
         border-radius: 5px;
 
         background-color: ${props => props.mouseIn ?
-            props.theme === 'dark' ? '#97B4FF' : '#590099' :
+            props.theme === 'dark' ? '#CFBDDB' : '#590099' :
             props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor
         };
     }

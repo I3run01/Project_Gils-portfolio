@@ -38,7 +38,7 @@ export const LeftMenuBarStyled = styled.div<props>`
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5.2px);
         -webkit-backdrop-filter: blur(5.2px);
-        border: 1px solid rgba(255, 255, 255, 0.34);
+        border-right: 1px solid rgba(255, 255, 255, 0.34);
 
         #AboutIcon, #workIcon, #themeIcon {
 
@@ -78,7 +78,7 @@ export const LeftMenuBarStyled = styled.div<props>`
 
                     img {
                         filter: ${props => props.theme === 'dark' ?
-                        'saturate(200%) opacity(40%)':
+                        'saturate(5%) brightness(620%)':
                         'saturate(100%)'
                         };
                     }  
@@ -131,6 +131,7 @@ export const LeftMenuBarStyled = styled.div<props>`
     //animation
     .closed {
         width: 0px;
+        border-right: 0px;
     }
 
     @media screen and (min-width: 1000px){
@@ -138,6 +139,7 @@ export const LeftMenuBarStyled = styled.div<props>`
         //animation
         .closed {
             width: 80px;
+            border-right: 0px;
         }
         
     }

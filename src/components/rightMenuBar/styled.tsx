@@ -37,7 +37,7 @@ export const RightMenuBarStyled = styled.div<Props>`
 
                 :hover {
                     filter: brightness(100%) ${props => props.theme === 'dark' ?
-                        'saturate(200%) opacity(40%)' :
+                        'saturate(5%) brightness(620%)' :
                         'saturate(100%)'
                     }
                 }
