@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-export const CapeStyled = styled.div`
+type props = {
+   theme: 'dark' | 'light'
+}
+
+const fontDarkFont = 'white'
+const fontLightFont = 'black'
+
+export const CapeStyled = styled.div<props>`
    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
 
@@ -53,6 +60,36 @@ export const CapeStyled = styled.div`
 
       filter: drop-shadow(3px 3px 4px #000000);
 
+      
+      // CSS
+      color: ${props => props.theme === 'dark' ? '#0F198A' : '#404ABF'};
+
+      background-image: -webkit-linear-gradient(${props => props.theme === 'dark' 
+         ? '135deg, #404ABF 0%,#8F8E8E 100%' 
+         : '135deg, #0F198A 0%,#151433 100%'
+      });
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      transition: all 0.5s ease-in-out;
+
+   }
+
+   h3 {
+      position: absolute;
+      bottom: 50px;
+      left: 5%;
+
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 30px;
+
+      color: ${props => props.theme === 'dark' ? fontDarkFont : fontLightFont};
+
+      transition: all 0.5s ease-in-out;
    }
 
    @media screen and (min-width: 500px) {
@@ -64,7 +101,12 @@ export const CapeStyled = styled.div`
 
       h2 {
          left: 2%;
-         bottom: 180px;
+         bottom: 220px;
+      }
+
+      h3 {
+         left: 2%;
+         bottom: 200px;
       }
       
    }
@@ -79,12 +121,24 @@ export const CapeStyled = styled.div`
          left: 10%;
       }
 
+      h3 {
+         left: 10%;
+      }
+
    }
 
    @media screen and (min-width: 1000px) {
       #photoDiv {
          right: 10%;
          width: 30%;
+      }
+
+      h2 {
+         font-size: 48px;
+      }
+
+      h3 {
+         font-size: 24px;
       }
    }
 
