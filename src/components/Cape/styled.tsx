@@ -9,8 +9,11 @@ export const CapeStyled = styled.div`
    
 
    #photoDiv {
-      margin-left: 15px;
-      margin-right: 15px;
+      position: absolute;
+      bottom: 100px;
+      right: 5%;
+
+      width: 90%;
 
       img {
          width: 100%;
@@ -24,7 +27,7 @@ export const CapeStyled = styled.div`
 
    #line {
          position: absolute;
-         bottom: 50px;
+         bottom: 200px;
          left: 0;
          z-index: -1;
 
@@ -38,7 +41,6 @@ export const CapeStyled = styled.div`
    @media screen and (min-width: 500px) {
       
       #photoDiv {
-         margin-left: 30%;
          width: 60%;
       }
       
@@ -46,14 +48,14 @@ export const CapeStyled = styled.div`
 
    @media screen and (min-width: 700px) {
       #photoDiv {
-         margin-left: 50%;
+         right: 8%;
          width: 40%;
       }
    }
 
    @media screen and (min-width: 1000px) {
       #photoDiv {
-         margin-left: 60%;
+         right: 10%;
          width: 30%;
       }
    }
