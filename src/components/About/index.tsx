@@ -1,8 +1,10 @@
+import { ABoutStyled } from './styled'
+
 export const About = () => {
 
     return (
-        <div>
+        <ABoutStyled>
             
-        </div>
+        </ABoutStyled>
     )
 }
