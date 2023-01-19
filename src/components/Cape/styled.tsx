@@ -11,7 +11,7 @@ export const CapeStyled = styled.div`
 
    #photoDiv {
       position: absolute;
-      bottom: 100px;
+      bottom: 150px;
       right: 5%;
 
       width: 90%;
@@ -40,28 +40,25 @@ export const CapeStyled = styled.div`
    }
 
    h2 {
+      position: absolute;
+      bottom: 70px;
+      left: 5%;
+
       text-align: center;
       font-family: 'Dosis';
       font-style: normal;
-      font-weight: 700;
+      font-weight: 900;
       font-size: 36px;
       line-height: 46px;
 
-      background-color: yellow;
-
-      background: conic-gradient(from -6.57deg at 11.95% 190.66%, #404ABF 0deg, rgba(0, 0, 0, 0) 360deg, #000000 360deg);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      filter: drop-shadow();
+      filter: drop-shadow(3px 3px 4px #000000);
 
    }
 
    @media screen and (min-width: 500px) {
       
       #photoDiv {
+         bottom: 100px;
          width: 60%;
       }
       
