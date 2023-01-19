@@ -67,8 +67,8 @@ export const LeftMenuBarStyled = styled.div<props>`
                     }
 
                 :hover::after {
-                    left: 20%;
-                    right: 20%;
+                    left: 30%;
+                    right: 30%;
                     opacity: 100%;
                 }
 
