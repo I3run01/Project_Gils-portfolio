@@ -56,10 +56,15 @@ export const CapeStyled = styled.div`
    }
 
    @media screen and (min-width: 500px) {
-      
+   
       #photoDiv {
          bottom: 100px;
          width: 60%;
+      }
+
+      h2 {
+         left: 2%;
+         bottom: 180px;
       }
       
    }
@@ -69,6 +74,11 @@ export const CapeStyled = styled.div`
          right: 8%;
          width: 40%;
       }
+
+      h2 {
+         left: 10%;
+      }
+
    }
 
    @media screen and (min-width: 1000px) {
