@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const CapeStyled = styled.div`
    position: relative;
+   
+   width: 100vw;
+   overflow-x: hidden;
 
    #photoDiv {
       margin-left: 15px;
@@ -52,7 +55,6 @@ export const CapeStyled = styled.div`
          width: 30%;
       }
    }
-
 
 
 `
