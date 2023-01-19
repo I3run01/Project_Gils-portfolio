@@ -62,7 +62,7 @@ export const LeftMenuBar = () =>{
                 </div>
                 <div id="themeIcon">
                     <div onClick={changeTheme}>
-                        <img src="menuIcons/Moon.svg" alt="" />
+                        <img src={state.theme.status === 'dark' ? 'menuIcons/Sun.svg' : 'menuIcons/Moon.svg'} alt="" />
                         <h2>{state.theme.status === 'dark' ? 'Claro' : 'Escuro'}</h2>
                     </div>  
                 </div>

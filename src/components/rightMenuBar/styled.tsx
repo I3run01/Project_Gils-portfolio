@@ -75,7 +75,7 @@ export const RightMenuBarStyled = styled.div<Props>`
             justify-content: center;
 
             .Icons {
-                height: 60%;
+                height: 65%;
             }
 
             .topLine, .bottomLine {
