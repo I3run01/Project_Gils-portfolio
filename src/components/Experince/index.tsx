@@ -40,13 +40,13 @@ export const Experince = () => {
                                             {item.workinformation[item.workinformation.length-1].start.startMonth}/
                                             {item.workinformation[item.workinformation.length-1].start.startYear} -  
                                             {
-                                                item.workinformation[index].end.endMonth === 'atualmente' ?
+                                                item.workinformation[0].end.endMonth === 'atualmente' ?
                                                 ' ':
-                                                ' ' + item.workinformation[index].end.endMonth + '/'
+                                                ' ' + item.workinformation[0].end.endMonth + '/'
                                             }
-                                            {item.workinformation[index].end.endYear} ·  {' '}
+                                            {item.workinformation[0].end.endYear} ·  {' '}
                                             {
-                                                item.workinformation[index].end.endMonth === 'atualmente' ?
+                                                item.workinformation[0].end.endMonth === 'atualmente' ?
                                                 dateDiff(
                                                     item.workinformation[item.workinformation.length-1].start.startMonth,
                                                     item.workinformation[item.workinformation.length-1].start.startYear,
@@ -57,13 +57,34 @@ export const Experince = () => {
                                                 dateDiff(
                                                     item.workinformation[item.workinformation.length-1].start.startMonth,
                                                     item.workinformation[item.workinformation.length-1].start.startYear,
-                                                    item.workinformation[index].end.endMonth as number,
-                                                    item.workinformation[index].end.endYear as number
+                                                    item.workinformation[0].end.endMonth as number,
+                                                    item.workinformation[0].end.endYear as number
                                                 )
                                             }
                                         </h4>
                                     </div>
                                 </div>
+
+                                 {item.workinformation.map((subItem, index) => {
+                                    return (
+                                        <div>
+                                            <h2>{subItem.job}</h2>
+                                            <h2>
+                                                {subItem.start.startMonth}/{subItem.start.startYear + '- '}
+                                                {subItem.end.endMonth}{subItem.end.endYear === 'atualmente' ? '': '/ ' + subItem.end.endYear}
+                                                {
+                                                    ' · ' +
+                                                    dateDiff(
+                                                        subItem.start.startMonth,subItem.start.startYear,
+                                                        subItem.end.endMonth === 'atualmente' ? getCurrentMonth() : subItem.end.endMonth as number,subItem.end.endYear === 'atualmente' ? getCurrentYear() : subItem.end.endYear as number,
+                                                    )
+                                                }
+
+                                                
+                                            </h2>
+                                        </div>
+                                    )
+                                 })}
                             </div> 
                         </div>
                     )

@@ -41,7 +41,7 @@ export const ExperienceStyled = styled.div<props>`
 
             .business {
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 width: 95%;
                 margin: auto;
 
@@ -58,6 +58,7 @@ export const ExperienceStyled = styled.div<props>`
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    margin-left: 5px;
 
                     img {
                         width: 100%;
