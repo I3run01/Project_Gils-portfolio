@@ -1,17 +1,22 @@
 import { LeftMenuBar } from './components/leftMenuBar'
 import { RightMenuBar } from './components/rightMenuBar'
 import { GlobalStyled } from './globalStyled'
-import { Cape } from './components/Cape/index'
+import { MainStyled } from './globalStyled'
 import { BackGround } from './components/bk'
+import { Cape } from './components/Cape/index'
+import { About } from './components/About'
  
 function App() {
 
   return (
-    <GlobalStyled>
-      <Cape/>
+    <GlobalStyled>   
       <BackGround/>
       <RightMenuBar/>
-      <LeftMenuBar/>  
+      <LeftMenuBar/>
+      <Cape/>
+      <MainStyled>
+        <About/>
+      </MainStyled>
     </GlobalStyled>
   )
 }
