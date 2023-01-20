@@ -35,10 +35,10 @@ export const Experince = () => {
                                     </div>
                                     <div className='text'>
                                         <h3>{item.businessName}</h3>
-                                        <h4>{item.workinformation[index].job}</h4>
+                                        <h4>{item.workinformation[0].job}</h4>
                                         <h4>
-                                            {item.workinformation[index].start.startMonth}/
-                                            {item.workinformation[index].start.startYear} -  
+                                            {item.workinformation[item.workinformation.length-1].start.startMonth}/
+                                            {item.workinformation[item.workinformation.length-1].start.startYear} -  
                                             {
                                                 item.workinformation[index].end.endMonth === 'atualmente' ?
                                                 ' ':
@@ -48,15 +48,15 @@ export const Experince = () => {
                                             {
                                                 item.workinformation[index].end.endMonth === 'atualmente' ?
                                                 dateDiff(
-                                                    item.workinformation[index].start.startMonth,
-                                                    item.workinformation[index].start.startYear,
+                                                    item.workinformation[item.workinformation.length-1].start.startMonth,
+                                                    item.workinformation[item.workinformation.length-1].start.startYear,
                                                     getCurrentMonth()+1,
                                                     getCurrentYear()
                                                 )
                                                 :
                                                 dateDiff(
-                                                    item.workinformation[index].start.startMonth,
-                                                    item.workinformation[index].start.startYear,
+                                                    item.workinformation[item.workinformation.length-1].start.startMonth,
+                                                    item.workinformation[item.workinformation.length-1].start.startYear,
                                                     item.workinformation[index].end.endMonth as number,
                                                     item.workinformation[index].end.endYear as number
                                                 )
