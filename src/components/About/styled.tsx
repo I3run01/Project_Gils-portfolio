@@ -8,7 +8,8 @@ const fontColorDark = 'white'
 const fontColorLight = 'black'
 
 export const ABoutStyled = styled.div<props>`
-    height: 100vh;
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+    min-height: 100vh;
 
     h1 {
         font-family: 'Dosis';
