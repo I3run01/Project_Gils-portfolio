@@ -58,7 +58,6 @@ export const ExperienceStyled = styled.div<props>`
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    margin: 10px;
 
                     img {
                         width: 100%;
@@ -66,8 +65,7 @@ export const ExperienceStyled = styled.div<props>`
                 }
 
                 .text {
-                    
-                    h2 {
+                    h3 {
                         margin: 0;
                         font-family: 'Dosis';
                         font-style: normal;
@@ -80,7 +78,7 @@ export const ExperienceStyled = styled.div<props>`
                         color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
                     }
 
-                    h3 {
+                    h4 {
                         margin: 0;
                         font-family: 'Dosis';
                         font-style: normal;
@@ -89,10 +87,12 @@ export const ExperienceStyled = styled.div<props>`
                         line-height: 23px;
                         display: flex;
                         align-items: center;
-
+                        justify-content: center;
                         text-align: center;
 
-                        color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight}
+                        color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+
+                        padding: 5px;
                     }
                 }
 
