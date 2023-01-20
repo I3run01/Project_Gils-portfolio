@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { Context } from '../../contexts/Context'
 import { ABoutStyled } from './styled'
 
-export const About = () => {
+export const Experi = () => {
 
     const {state, dispatch} = useContext(Context)
 
