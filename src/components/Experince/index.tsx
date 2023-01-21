@@ -1,7 +1,14 @@
 import { ExperienceStyled } from './styled'
 import { Jobs } from './Classes/classExperience'
+import { useEffect, useState } from 'react';
 
 export const Experince = () => {
+
+    const [diffBusinessdata, setdiffBusinessdata] = useState<number[]>([])
+
+    useEffect(() => {
+        startSmallestIndex()
+    }, [])
 
     function getCurrentYear() {
         return new Date().getFullYear();
@@ -31,6 +38,23 @@ export const Experince = () => {
         }
         return smallestIndex;
     }
+
+    function startSmallestIndex() {
+        
+        for( let i of Jobs) {
+            
+            const startArray = []
+            const endArray = []
+
+            for( let c of i.workinformation){
+                let startMonths = c.start.startMonth + c.start.startYear*12
+                let endMonths = c.end.endMonth as number + c.end.endYear*12 as number
+ 
+                startArray.push(startMonths)
+            }
+
+            let smallestMonth:number = findSmallestIndex(startArray)
+    }
       
     return (
         <ExperienceStyled>
@@ -49,8 +73,8 @@ export const Experince = () => {
                                         <h3>{item.businessName}</h3>
                                         <h4>{item.workinformation[0].job}</h4>
                                         <h4>
-                                            {item.workinformation[item.workinformation.length-1].start.startMonth}/
-                                            {item.workinformation[item.workinformation.length-1].start.startYear} -  
+                                            {item.workinformation[indexArray[index]].start.startMonth}/
+                                            {item.workinformation[indexArray[index]].start.startYear} -  
                                             {
                                                 item.workinformation[0].end.endMonth === 'atualmente' ?
                                                 ' ':
@@ -60,15 +84,15 @@ export const Experince = () => {
                                             {
                                                 item.workinformation[0].end.endMonth === 'atualmente' ?
                                                 dateDiff(
-                                                    item.workinformation[item.workinformation.length-1].start.startMonth,
-                                                    item.workinformation[item.workinformation.length-1].start.startYear,
+                                                    item.workinformation[indexArray[index]].start.startMonth,
+                                                    item.workinformation[indexArray[index]].start.startYear,
                                                     getCurrentMonth()+1,
                                                     getCurrentYear()
                                                 )
                                                 :
                                                 dateDiff(
-                                                    item.workinformation[item.workinformation.length-1].start.startMonth,
-                                                    item.workinformation[item.workinformation.length-1].start.startYear,
+                                                    item.workinformation[indexArray[index]].start.startMonth,
+                                                    item.workinformation[indexArray[index]].start.startYear,
                                                     item.workinformation[0].end.endMonth as number,
                                                     item.workinformation[0].end.endYear as number
                                                 )
