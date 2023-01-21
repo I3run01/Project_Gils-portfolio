@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 
 export const Experince = () => {
 
-    const [diffBusinessdata, setdiffBusinessdata] = useState<number[]>([])
+    const [diffBusinessdata, setdiffBusinessdata] = useState<string[]>([])
+    const [startBusinessdata, setStartBusinessdata] = useState<string[]>([])
 
     useEffect(() => {
         startSmallestIndex()
@@ -27,19 +28,17 @@ export const Experince = () => {
 
     }
 
-    function findSmallestIndex(arr:number[]) {
-        let smallest = arr[0];
-        let smallestIndex = 0;
-        for (let i = 1; i < arr.length; i++) {
-          if (arr[i] < smallest) {
-            smallest = arr[i];
-            smallestIndex = i;
-          }
-        }
-        return smallestIndex;
+    function convertMonthsToYears(months: number): { years: number, months: number } {
+        let years = Math.floor(months / 12);
+        let remainingMonths = months % 12;
+        return { years, months: remainingMonths };
     }
+    
 
     function startSmallestIndex() {
+
+        let arrayDiff:string[] = []
+        let arraySmallestData:string[] = []
         
         for( let i of Jobs) {
             
@@ -48,12 +47,24 @@ export const Experince = () => {
 
             for( let c of i.workinformation){
                 let startMonths = c.start.startMonth + c.start.startYear*12
-                let endMonths = c.end.endMonth as number + c.end.endYear*12 as number
+                let endMonths = c.end.endMonth === 'atualmente' || c.end.endYear === 'atualmente' ? getCurrentMonth() + getCurrentYear() * 12 : c.end.endMonth + c.end.endYear * 12
  
                 startArray.push(startMonths)
+                endArray.push(endMonths)
             }
 
-            let smallestMonth:number = findSmallestIndex(startArray)
+            let smallestValue = Math.min(...startArray);
+            let biggestValue = Math.max(...endArray)
+
+            let responseDiff = convertMonthsToYears(biggestValue - smallestValue)
+            let responseSmallestStart = convertMonthsToYears(smallestValue)
+
+            arrayDiff.push(`${responseDiff.years}a e ${responseDiff.months}m`)
+            arraySmallestData.push(`${responseSmallestStart.months}/${responseSmallestStart.years}`)
+        }
+
+        setdiffBusinessdata(arrayDiff)
+        setStartBusinessdata(arraySmallestData)
     }
       
     return (
@@ -73,30 +84,13 @@ export const Experince = () => {
                                         <h3>{item.businessName}</h3>
                                         <h4>{item.workinformation[0].job}</h4>
                                         <h4>
-                                            {item.workinformation[indexArray[index]].start.startMonth}/
-                                            {item.workinformation[indexArray[index]].start.startYear} -  
+                                            {startBusinessdata[index]} -  
                                             {
                                                 item.workinformation[0].end.endMonth === 'atualmente' ?
                                                 ' ':
                                                 ' ' + item.workinformation[0].end.endMonth + '/'
                                             }
-                                            {item.workinformation[0].end.endYear} ·  {' '}
-                                            {
-                                                item.workinformation[0].end.endMonth === 'atualmente' ?
-                                                dateDiff(
-                                                    item.workinformation[indexArray[index]].start.startMonth,
-                                                    item.workinformation[indexArray[index]].start.startYear,
-                                                    getCurrentMonth()+1,
-                                                    getCurrentYear()
-                                                )
-                                                :
-                                                dateDiff(
-                                                    item.workinformation[indexArray[index]].start.startMonth,
-                                                    item.workinformation[indexArray[index]].start.startYear,
-                                                    item.workinformation[0].end.endMonth as number,
-                                                    item.workinformation[0].end.endYear as number
-                                                )
-                                            }
+                                            {item.workinformation[0].end.endYear} ·  {diffBusinessdata[index]}
                                         </h4>
                                     </div>
                                 </div>
