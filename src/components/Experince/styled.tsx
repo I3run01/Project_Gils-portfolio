@@ -30,11 +30,12 @@ export const ExperienceStyled = styled.div<props>`
             width: 100%;
 
             box-sizing: border-box;
-            background: linear-gradient(179.21deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+            background: linear-gradient(179.21deg, rgba(255, 253, 253, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
             box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(40px);
             /* Note: backdrop-filter has minimal browser support */
             border-radius: 20px;
+            border: 3px solid ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
 
             .business {
                 display: flex;
