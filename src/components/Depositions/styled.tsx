@@ -1,12 +1,39 @@
 import styled from "styled-components";
 
-export const DepositionStyled = styled.div`
-    #container {
-        margin-top: 20px;
-        width: 300px;
-        height: 200px;
-        background-color: blue;
+type props = {
+    theme: 'dark' | 'light'
+}
 
+const fontColorDark = '#d2d2d2'
+const fontColorLight = 'black'
+
+export const DepositionStyled = styled.div<props>`
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
+    min-height: 100vh;
+
+    h1 {
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 61px;
+        color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
     }
+
+    .container {
+        margin-top: 20px;
+        padding-top: 20px;
+        width: 100%;
+
+        box-sizing: border-box;
+        background: linear-gradient(179.21deg, rgba(255, 253, 253, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(40px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+        border: 3px solid ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+    }
+
     
 `
