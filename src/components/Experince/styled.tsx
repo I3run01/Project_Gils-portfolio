@@ -126,12 +126,12 @@ export const ExperienceStyled = styled.div<props>`
         }
     }
 
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: 1000px) {
         #container > .subcontainer {
 
             .business {
-                width: 65%;
-                padding: 20px;
+                width: 70%;
+                padding: 5px;
                 margin-left: 10px;
                 border-radius: 80px;
                 justify-content: space-between;
