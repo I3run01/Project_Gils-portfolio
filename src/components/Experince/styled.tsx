@@ -43,7 +43,7 @@ export const ExperienceStyled = styled.div<props>`
                 width: 95%;
                 margin: auto;
 
-                background: linear-gradient(179.21deg, rgba(157, 155, 155, 0.1) 0%, rgba(85, 85, 85, 0.05) 100%);
+                background: linear-gradient(179.21deg, rgba(157, 155, 155, 0.1) 0%, rgba(85, 85, 85, 0.5) 100%);
                 box-shadow: 0px 4.6281px 27.7686px -1.15702px rgba(0, 0, 0, 0.25);
                 backdrop-filter: blur(23.1405px);
                 border: 3px solid black;
@@ -137,19 +137,19 @@ export const ExperienceStyled = styled.div<props>`
                 justify-content: space-between;
     
                 .photo {
-                    width: 120px;
+                    width: 90px;
                 }
         
                 .text {
                     margin-left: 80px;
                     
                     h3 {
-                        margin-top: 20px;
+                        margin-top: 0px;
                         font-size: 24px;
                     }
         
                     h4 {
-                        margin-top: 20px;
+                        margin-top: 0px;
                         font-size: 18px;
                     }
                 }
