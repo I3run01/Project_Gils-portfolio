@@ -68,7 +68,7 @@ export const ExperienceStyled = styled.div<props>`
                     line-height: 30px;
 
                     text-align: center;
-                    color: black;
+                    color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
                 }
 
                 h4 {
@@ -82,7 +82,7 @@ export const ExperienceStyled = styled.div<props>`
                     align-items: center;
                     justify-content: center;
                     text-align: center;
-                    color: black;
+                    color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
 
                     padding: 5px;
                 }
@@ -120,7 +120,7 @@ export const ExperienceStyled = styled.div<props>`
             flex-direction: row;
             align-items: flex-start;
         }
-        }
+    }
 
     @media screen and (min-width: 1000px) {
         .container {

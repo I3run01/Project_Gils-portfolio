@@ -24,6 +24,8 @@ export const Depositions = () => {
                                     <h4>{item.Relation}</h4>
                                 </div>
                             </div>
+
+                            <p className='describe'>{item.Describe}</p>
                         </div>
                     )
                 })

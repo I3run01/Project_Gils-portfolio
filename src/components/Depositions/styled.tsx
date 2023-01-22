@@ -33,7 +33,118 @@ export const DepositionStyled = styled.div<props>`
         /* Note: backdrop-filter has minimal browser support */
         border-radius: 20px;
         border: 3px solid ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+
+        .business {
+            display: flex;
+            justify-content: space-around;
+            width: 95%;
+            margin: auto;
+
+            background: linear-gradient(179.21deg, rgba(157, 155, 155, 0.1) 0%, rgba(85, 85, 85, 0.5) 100%);
+            box-shadow: 0px 4.6281px 27.7686px -1.15702px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(23.1405px);
+            border: 3px solid black;
+            border-radius: 30px;
+            
+            .photo {
+                width: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 5px;
+                padding: 5px;
+                
+
+                img {
+                    width: 100%;
+                    border: 1px solid ${fontColorLight};
+                    border-radius: 50%;
+
+                }
+            }
+
+            .text {
+                h3 {
+                    margin: 0;
+                    font-family: 'Dosis';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: px;
+                    line-height: 30px;
+
+                    text-align: center;
+                    color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+                }
+
+                h4 {
+                    margin: 0;
+                    font-family: 'Dosis';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+                    
+                    padding: 5px;
+                }   
+            }
+        }
+
+        .describe {
+                position: relative;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                padding-left: 40px;
+
+                color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+        }
     }
 
+    @media screen and (min-width: 1000px) {
+        .container {
+
+            .business {
+                width: 70%;
+                padding: 5px;
+                margin-left: 10px;
+                border-radius: 80px;
+                justify-content: flex-start;
     
+                .photo {
+                    width: 90px;
+                }
+        
+                .text {
+                    padding-left: 15px;
+                    
+                    h3 {
+                        margin-top: 0px;
+                        font-size: 24px;
+                    }
+        
+                    h4 {
+                        margin-top: 0px;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+
+    }
+   
 `
