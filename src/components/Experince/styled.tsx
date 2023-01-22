@@ -21,113 +21,109 @@ export const ExperienceStyled = styled.div<props>`
         color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
     }
 
-    #container {
+    .container {
+        margin-top: 20px;
+        padding-top: 20px;
         width: 100%;
 
-        .subcontainer {
-            margin-top: 20px;
-            padding-top: 20px;
-            width: 100%;
+        box-sizing: border-box;
+        background: linear-gradient(179.21deg, rgba(255, 253, 253, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(40px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+        border: 3px solid ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
 
-            box-sizing: border-box;
-            background: linear-gradient(179.21deg, rgba(255, 253, 253, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
-            box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(40px);
-            /* Note: backdrop-filter has minimal browser support */
-            border-radius: 20px;
-            border: 3px solid ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+        .business {
+            display: flex;
+            justify-content: space-around;
+            width: 95%;
+            margin: auto;
 
-            .business {
+            background: linear-gradient(179.21deg, rgba(157, 155, 155, 0.1) 0%, rgba(85, 85, 85, 0.5) 100%);
+            box-shadow: 0px 4.6281px 27.7686px -1.15702px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(23.1405px);
+            border: 3px solid black;
+            border-radius: 40px;
+            
+            .photo {
+                width: 56px;
                 display: flex;
-                justify-content: space-around;
-                width: 95%;
-                margin: auto;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 5px;
 
-                background: linear-gradient(179.21deg, rgba(157, 155, 155, 0.1) 0%, rgba(85, 85, 85, 0.5) 100%);
-                box-shadow: 0px 4.6281px 27.7686px -1.15702px rgba(0, 0, 0, 0.25);
-                backdrop-filter: blur(23.1405px);
-                border: 3px solid black;
-                border-radius: 40px;
-                
-                .photo {
-                    width: 56px;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text {
+                h3 {
+                    margin: 0;
+                    font-family: 'Dosis';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: px;
+                    line-height: 30px;
+
+                    text-align: center;
+                    color: black;
+                }
+
+                h4 {
+                    margin: 0;
+                    font-family: 'Dosis';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
                     justify-content: center;
-                    margin-left: 5px;
+                    text-align: center;
+                    color: black;
 
-                    img {
-                        width: 100%;
-                    }
+                    padding: 5px;
                 }
-
-                .text {
-                    h3 {
-                        margin: 0;
-                        font-family: 'Dosis';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: px;
-                        line-height: 30px;
-
-                        text-align: center;
-                        color: black;
-                    }
-
-                    h4 {
-                        margin: 0;
-                        font-family: 'Dosis';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 23px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        color: black;
-
-                        padding: 5px;
-                    }
-                }
-
-
             }
 
-            h2 {
-                font-family: 'Dosis';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 23px;
-                padding-left: 10px;
 
-                color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
-            }
-
-            .describe {
-                position: relative;
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 25px;
-                display: flex;
-                align-items: center;
-                padding: 10px;
-                padding-left: 40px;
-
-                color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
-
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-            }
         }
-    }
+
+        h2 {
+            font-family: 'Dosis';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            padding-left: 10px;
+
+            color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+        }
+
+        .describe {
+            position: relative;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            padding-left: 40px;
+
+            color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        }
 
     @media screen and (min-width: 1000px) {
-        #container > .subcontainer {
+        .container {
 
             .business {
                 width: 70%;

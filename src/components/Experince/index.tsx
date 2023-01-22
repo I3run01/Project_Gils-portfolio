@@ -76,54 +76,52 @@ export const Experince = () => {
             {
                 Jobs.map((item, index)=>{
                     return (
-                        <div id='container'>
-                            <div className='subcontainer' >
-                                <div className='business'>
-                                    <div className='photo'>
-                                        <img src={item.imageFile} alt="" />
-                                    </div>
-                                    <div className='text'>
-                                        <h3>{item.businessName}</h3>
-                                        <h4>{item.workinformation[0].job}</h4>
-                                        <h4>
-                                            {startBusinessdata[index]} -  
-                                            {
-                                                item.workinformation[0].end.endMonth === 'atualmente' ?
-                                                ' ':
-                                                ' ' + item.workinformation[0].end.endMonth + '/'
-                                            }
-                                            {item.workinformation[0].end.endYear} ·  {diffBusinessdata[index]}
-                                        </h4>
-                                    </div>
+                        <div className='container' >
+                            <div className='business'>
+                                <div className='photo'>
+                                    <img src={item.imageFile} alt="" />
                                 </div>
+                                <div className='text'>
+                                    <h3>{item.businessName}</h3>
+                                    <h4>{item.workinformation[0].job}</h4>
+                                    <h4>
+                                        {startBusinessdata[index]} -  
+                                        {
+                                            item.workinformation[0].end.endMonth === 'atualmente' ?
+                                            ' ':
+                                            ' ' + item.workinformation[0].end.endMonth + '/'
+                                        }
+                                        {item.workinformation[0].end.endYear} ·  {diffBusinessdata[index]}
+                                    </h4>
+                                </div>
+                            </div>
 
-                                 {item.workinformation.map((subItem, index) => {
-                                    return (
-                                        <div>
-                                            <h2>{subItem.job}</h2>
-                                            <h2>
-                                                {subItem.start.startMonth}/{subItem.start.startYear + '- '}
-                                                {subItem.end.endMonth}{subItem.end.endYear === 'atualmente' ? '': '/ ' + subItem.end.endYear}
-                                                {
-                                                    ' · ' +
-                                                    dateDiff(
-                                                        subItem.start.startMonth,subItem.start.startYear,
-                                                        subItem.end.endMonth === 'atualmente' ? getCurrentMonth() : subItem.end.endMonth as number,subItem.end.endYear === 'atualmente' ? getCurrentYear() : subItem.end.endYear as number,
-                                                    )
-                                                }         
-                                            </h2>
-                                            <h2>
-                                                {subItem.local}
-                                            </h2>
-                                            <div className='describe'>
-                                                <div className='describeDot'>·</div>
-                                                <div className='describeText'>{subItem.describe}</div>
-                                           </div>
+                                {item.workinformation.map((subItem, index) => {
+                                return (
+                                    <div>
+                                        <h2>{subItem.job}</h2>
+                                        <h2>
+                                            {subItem.start.startMonth}/{subItem.start.startYear + '- '}
+                                            {subItem.end.endMonth}{subItem.end.endYear === 'atualmente' ? '': '/ ' + subItem.end.endYear}
+                                            {
+                                                ' · ' +
+                                                dateDiff(
+                                                    subItem.start.startMonth,subItem.start.startYear,
+                                                    subItem.end.endMonth === 'atualmente' ? getCurrentMonth() : subItem.end.endMonth as number,subItem.end.endYear === 'atualmente' ? getCurrentYear() : subItem.end.endYear as number,
+                                                )
+                                            }         
+                                        </h2>
+                                        <h2>
+                                            {subItem.local}
+                                        </h2>
+                                        <div className='describe'>
+                                            <div className='describeDot'>·</div>
+                                            <div className='describeText'>{subItem.describe}</div>
                                         </div>
-                                    )
-                                 })}
-                            </div> 
-                        </div>
+                                    </div>
+                                )
+                                })}
+                        </div> 
                     )
                 })
             }
