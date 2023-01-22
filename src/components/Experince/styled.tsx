@@ -134,14 +134,14 @@ export const ExperienceStyled = styled.div<props>`
                 padding: 5px;
                 margin-left: 10px;
                 border-radius: 80px;
-                justify-content: space-between;
+                justify-content: flex-start;
     
                 .photo {
                     width: 90px;
                 }
         
                 .text {
-                    padding-right: 15px;
+                    padding-left: 15px;
                     
                     h3 {
                         margin-top: 0px;
