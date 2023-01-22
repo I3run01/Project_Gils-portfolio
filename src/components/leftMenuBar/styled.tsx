@@ -33,8 +33,7 @@ export const LeftMenuBarStyled = styled.div<props>`
         width: ${widthMenu};
         transition: all 0.5s ease-in-out;
 
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.25);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5.2px);
         -webkit-backdrop-filter: blur(5.2px);
