@@ -5,7 +5,7 @@ type props = {
 }
 
 const widthMenu = '250px'
-const fontColorDark = 'white'
+const fontColorDark = '#d2d2d2'
 const fontColorLight = 'black'
 const lightPurpleColor = '#590099'
 const darkPurpleColor = '#CFBDDB'

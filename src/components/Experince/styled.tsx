@@ -4,7 +4,7 @@ type props = {
     theme: 'dark' | 'light'
 }
 
-const fontColorDark = 'white'
+const fontColorDark = '#d2d2d2'
 const fontColorLight = 'black'
 
 export const ExperienceStyled = styled.div<props>`

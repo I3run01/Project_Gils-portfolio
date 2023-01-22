@@ -4,7 +4,7 @@ type props = {
    theme: 'dark' | 'light'
 }
 
-const fontDarkFont = 'white'
+const fontDarkFont = '#d2d2d2'
 const fontLightFont = 'black'
 
 export const CapeStyled = styled.div<props>`
