@@ -6,6 +6,7 @@ import { BackGround } from './components/bk'
 import { Cape } from './components/Cape/index'
 import { About } from './components/About'
 import { Experince } from './components/Experince'
+import { Depositions } from './components/Depositions'
  
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <MainStyled>
         <About/>
         <Experince/>
+        <Depositions/>
       </MainStyled>
       
     </GlobalStyled>
