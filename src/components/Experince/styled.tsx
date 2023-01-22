@@ -37,6 +37,8 @@ export const ExperienceStyled = styled.div<props>`
         .business {
             display: flex;
             justify-content: space-around;
+            align-items: center;
+            
             width: 95%;
             margin: auto;
 

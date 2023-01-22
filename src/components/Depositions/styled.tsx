@@ -37,6 +37,7 @@ export const DepositionStyled = styled.div<props>`
         .business {
             display: flex;
             justify-content: space-around;
+            align-items: center;
             width: 95%;
             margin: auto;
 
@@ -88,7 +89,7 @@ export const DepositionStyled = styled.div<props>`
                     justify-content: center;
                     text-align: center;
                     color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
-                    
+
                     padding: 5px;
                 }   
             }
