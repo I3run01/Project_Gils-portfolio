@@ -47,12 +47,7 @@ export const Jobs = [
             {
                 job: 'Analista de Tecnologia da Informação Jr',
                 local: 'Curitiba, Paraná, Brasil',
-                describe: `Pontifícia Universidade Católica do Paraná logo
-                Analista de Tecnologia da Informação JrAnalista de Tecnologia da Informação Jr
-                Pontifícia Universidade Católica do Paraná · Full-timePontifícia Universidade Católica do Paraná · Full-time
-                Nov 2021 - Present · 1 yr 3 mosNov 2021 - Present · 1 yr 3 mos
-                Curitiba, Paraná, BrasilCuritiba, Paraná, Brasil
-                Responsável pelo suporte aos usuários, docentes e estudantes da plataforma AVA, atendimento das demandas informatizadas do EAD, realização de consultas em banco de dados SQL Server e PostgreSQL, ações de formação e capacitação de usuários, elaboração de tutoriais e acompanhamento da qualidade dos processos.`,
+                describe: `Responsável pelo suporte aos usuários, docentes e estudantes da plataforma AVA, atendimento das demandas informatizadas do EAD, realização de consultas em banco de dados SQL Server e PostgreSQL, ações de formação e capacitação de usuários, elaboração de tutoriais e acompanhamento da qualidade dos processos.`,
                 skill: 'Desenvolvimento de conteúdo · GitBook · Design thinking · Programação lógica · Empreendedorismo · Letramento digital',
                 start: {
                     startMonth: 11,
