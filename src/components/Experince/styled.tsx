@@ -28,7 +28,6 @@ export const ExperienceStyled = styled.div<props>`
             margin-top: 20px;
             padding-top: 20px;
             width: 100%;
-            height: 300px;
 
             box-sizing: border-box;
             background: linear-gradient(179.21deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
@@ -36,8 +35,6 @@ export const ExperienceStyled = styled.div<props>`
             backdrop-filter: blur(20px);
             /* Note: backdrop-filter has minimal browser support */
             border-radius: 20px;
-
-            
 
             .business {
                 display: flex;
@@ -75,8 +72,7 @@ export const ExperienceStyled = styled.div<props>`
                         line-height: 30px;
 
                         text-align: center;
-
-                        color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+                        color: black;
                     }
 
                     h4 {
@@ -90,14 +86,43 @@ export const ExperienceStyled = styled.div<props>`
                         align-items: center;
                         justify-content: center;
                         text-align: center;
-
-                        color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+                        color: black;
 
                         padding: 5px;
                     }
                 }
 
 
+            }
+
+            h2 {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                padding-left: 10px;
+
+                color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+            }
+
+            .describe {
+                position: relative;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                padding-left: 40px;
+
+                color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
             }
         }
     }

@@ -1,11 +1,13 @@
 import { ExperienceStyled } from './styled'
 import { Jobs } from './Classes/classExperience'
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { Context } from '../../contexts/Context';
 
 export const Experince = () => {
 
     const [diffBusinessdata, setdiffBusinessdata] = useState<string[]>([])
     const [startBusinessdata, setStartBusinessdata] = useState<string[]>([])
+    const {state, dispatch} = useContext(Context)
 
     useEffect(() => {
         startSmallestIndex()
@@ -67,7 +69,8 @@ export const Experince = () => {
     }
       
     return (
-        <ExperienceStyled>
+        <ExperienceStyled
+        theme={state.theme.status}>
             <h1>Experiência</h1>
             
             {
@@ -107,10 +110,15 @@ export const Experince = () => {
                                                         subItem.start.startMonth,subItem.start.startYear,
                                                         subItem.end.endMonth === 'atualmente' ? getCurrentMonth() : subItem.end.endMonth as number,subItem.end.endYear === 'atualmente' ? getCurrentYear() : subItem.end.endYear as number,
                                                     )
-                                                }
-
-                                                
+                                                }         
                                             </h2>
+                                            <h2>
+                                                {subItem.local}
+                                            </h2>
+                                            <div className='describe'>
+                                                <div className='describeDot'>·</div>
+                                                <div className='describeText'>{subItem.describe}</div>
+                                           </div>
                                         </div>
                                     )
                                  })}
