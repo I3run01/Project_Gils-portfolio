@@ -141,7 +141,7 @@ export const ExperienceStyled = styled.div<props>`
                 }
         
                 .text {
-  
+                    padding-right: 15px;
                     
                     h3 {
                         margin-top: 0px;
