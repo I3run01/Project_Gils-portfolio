@@ -45,9 +45,7 @@ export const ExperienceStyled = styled.div<props>`
                 background: linear-gradient(179.21deg, rgba(157, 155, 155, 0.4) 0%, rgba(85, 85, 85, 0.1) 100%);
                 box-shadow: 0px 4.6281px 27.7686px -1.15702px rgba(0, 0, 0, 0.25);
                 backdrop-filter: blur(23.1405px);
-
                 border: 3px solid black;
-
                 border-radius: 40px;
                 
                 .photo {
@@ -125,6 +123,39 @@ export const ExperienceStyled = styled.div<props>`
                 align-items: flex-start;
             }
         }
+    }
+
+    @media screen and (min-width: 550px) {
+        #container > .subcontainer {
+
+            .business {
+                width: 65%;
+                padding: 20px;
+                margin-left: 10px;
+                border-radius: 80px;
+                justify-content: space-between;
+    
+                .photo {
+                    width: 120px;
+                }
+        
+                .text {
+                    margin-left: 80px;
+                    
+                    h3 {
+                        margin-top: 20px;
+                        font-size: 24px;
+                    }
+        
+                    h4 {
+                        margin-top: 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+
     }
     
 `
