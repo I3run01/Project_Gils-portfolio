@@ -1,6 +1,6 @@
 type gallary = {
-    image: string
-}[]
+    images: string[]
+}
 
 type colors = {
     colorRight_1: string
@@ -56,6 +56,19 @@ export const contentTeacherObj = [
         'Robótica',
         'contentTeacher/roticsIcon.svg',
         'contentTeacher/roticsImage.png',
-        
+        `Robótica é a área da tecnologia que se ocupa com o projeto, construção, operação e uso de robôs, bem como sistemas de computador para seu controle, feedback sensorial e processamento de informações. Essas tecnologias são usadas para desenvolver máquinas que podem substituir as funções humanas ou aumentar as habilidades humanas. A robótica envolve uma variedade de campos, incluindo engenharia mecânica, engenharia elétrica e ciência da computação. A robótica pode ser usada em uma ampla gama de aplicações, como fabricação, transporte, agricultura, saúde e muito mais.`,
+        images = [
+            'contentTeacher/roboticsGallary/image 1.png',
+            'contentTeacher/roboticsGallary/image 2.png',
+            'contentTeacher/roboticsGallary/image 3.png',
+            'contentTeacher/roboticsGallary/image 4.png',
+            'contentTeacher/roboticsGallary/image 5.png',
+            'contentTeacher/roboticsGallary/image 6.png',
+            'contentTeacher/roboticsGallary/image 7.png',
+            'contentTeacher/roboticsGallary/image 8.png',
+            'contentTeacher/roboticsGallary/image 9.png',
+            'contentTeacher/roboticsGallary/image 10.png',
+            'contentTeacher/roboticsGallary/image 11.png'
+        ],
     )
 ]
