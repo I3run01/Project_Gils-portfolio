@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { Context } from '../../contexts/Context'
+import { Context } from "../../../contexts/Context"
 import {CapeStyled} from './styled'
 
 export const Cape = () => {

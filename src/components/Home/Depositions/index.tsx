@@ -1,7 +1,7 @@
 import { DepositionStyled } from './styled'
 import { Users } from './classDepositions/classDeposition'
 import { useContext } from 'react'
-import { Context } from '../../contexts/Context'
+import { Context } from "../../../contexts/Context"
 
 export const Depositions = () => {
     const {state, dispatch} = useContext(Context)

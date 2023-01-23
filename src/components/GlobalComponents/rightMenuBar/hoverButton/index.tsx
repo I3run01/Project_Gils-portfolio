@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { Context } from "../../../contexts/Context"
+import { Context } from "../../../../contexts/Context"
 import { IconRightMenuBarStyled } from "./styled"
 
 type Props = {

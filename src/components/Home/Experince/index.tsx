@@ -1,7 +1,7 @@
 import { ExperienceStyled } from './styled'
 import { Jobs } from './Classes/classExperience'
 import { useContext, useEffect, useState } from 'react';
-import { Context } from '../../contexts/Context';
+import { Context } from "../../../contexts/Context"
 
 export const Experince = () => {
 

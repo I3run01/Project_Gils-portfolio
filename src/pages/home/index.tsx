@@ -1,8 +1,8 @@
 import { MainStyled } from '../../globalStyled'
-import { Cape } from '../../components/Cape/index'
-import { About } from '../../components/About'
-import { Experince } from '../../components/Experince'
-import { Depositions } from '../../components/Depositions'
+import { Cape } from '../../components/Home/Cape/index'
+import { About } from '../../components/Home/About'
+import { Experince } from '../../components/Home/Experince'
+import { Depositions } from '../../components/Home/Depositions'
 
 export const Home = () => {
 

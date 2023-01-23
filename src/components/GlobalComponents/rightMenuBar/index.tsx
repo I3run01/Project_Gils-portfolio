@@ -1,13 +1,11 @@
 import { IconRightMenuBar } from "./hoverButton"
 import { RightMenuBarStyled } from "./styled"
-import { GitHubIcon } from "./Icons/Icons"
 import { LinkedInIcon } from "./Icons/Icons"
 import { CvIcon } from "./Icons/Icons"
 import { InstagramIcon } from "./Icons/Icons"
-import { TelegramIcon } from "./Icons/Icons"
 import { WhatsAppIcon } from "./Icons/Icons"
-import { useContext, useEffect, useState } from "react"
-import { Context } from "../../contexts/Context"
+import { useContext, useState } from "react"
+import { Context } from "../../../contexts/Context"
 
 export const RightMenuBar = () => {
     const {state, dispatch} = useContext(Context)
