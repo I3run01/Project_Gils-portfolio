@@ -50,7 +50,7 @@ export const ABoutStyled = styled.div<props>`
             text-align: center;
 
             color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
-
+            
             z-index: -1;
         }
 

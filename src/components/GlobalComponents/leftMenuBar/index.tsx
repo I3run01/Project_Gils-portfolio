@@ -2,9 +2,12 @@ import { LeftMenuBarStyled } from "./styled"
 import { BurguerMenu } from "./BurgerMenu"
 import {useContext, useState } from "react"
 import { Context } from "../../../contexts/Context"
+import { useNavigate } from "react-router-dom"
 
 export const LeftMenuBar = () =>{
     const {state, dispatch} = useContext(Context)
+
+    const navigate = useNavigate()
 
     const [menuOpen, setMenuOpen] = useState<string>('opened')
 
@@ -26,10 +29,12 @@ export const LeftMenuBar = () =>{
         }
     }
     
-
-
     const handleMenuButton = () => {
         menuOpen === 'opened' ? setMenuOpen('closed') :  setMenuOpen('opened')
+    }
+
+    const Navigation = (route: string) => {
+        navigate(route)
     }
 
 
@@ -40,7 +45,7 @@ export const LeftMenuBar = () =>{
         }>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>
-                <div id="AboutIcon">
+                <div id="AboutIcon" onClick={() => Navigation('/')}>
                     <div>
                         <img src="menuIcons/About.svg" alt="" />
                         <h2>Começo</h2>
@@ -55,7 +60,7 @@ export const LeftMenuBar = () =>{
                         <img src="menuIcons/Services.svg" alt="" />
                         <h2>Serviços</h2>
                     </div>
-                    <div>
+                    <div onClick={() => Navigation('/contentTeacher')}>
                         <img src="menuIcons/Teacher.svg" alt="" />
                         <h2>Professora</h2>
                     </div>
