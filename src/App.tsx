@@ -1,7 +1,7 @@
 import { LeftMenuBar } from './components/leftMenuBar'
 import { RightMenuBar } from './components/rightMenuBar'
 import { GlobalStyled } from './globalStyled'
-import { BackGround } from './components/bk'
+import { BackGround } from './components/GlobalComponents/bk'
 import { MainRoutes } from './routes/mainRoutes'
  
 function App() {
