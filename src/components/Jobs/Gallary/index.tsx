@@ -3,11 +3,10 @@ import { Context } from '../../../contexts/Context'
 import { GallaryStyled } from './styled'
 
 type props = {
-    title: string
     gallary: string[]
 }
 
-export const Gallary = ({title, gallary}:props) => {
+export const Gallary = ({gallary}:props) => {
 
     const {state, dispatch} = useContext(Context)
     const [image, setImage] = useState<string>(gallary[0])
@@ -21,7 +20,7 @@ export const Gallary = ({title, gallary}:props) => {
         theme={state.theme.status}
         image={image} 
         >
-            <h1>{title}</h1>
+            <h1>Galeria</h1>
             <div id='gallary'>
                 <div id='imageChoseContainer'>
                     {gallary.map((item, index) => {

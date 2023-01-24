@@ -25,7 +25,6 @@ export const ContentTeacher = () => {
                     description={contentTeacherObj[index].description}
                 />
                 <Gallary
-                    title={contentTeacherObj[index].title}
                     gallary={contentTeacherObj[index].gallary}/>
             </MainStyled>
             
