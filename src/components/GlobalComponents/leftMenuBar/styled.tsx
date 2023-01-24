@@ -102,6 +102,7 @@ export const LeftMenuBarStyled = styled.div<props>`
                 font-family: 'dosis';
                 font-size: 24px;
                 color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+                text-align: right;
             }
         } 
 
