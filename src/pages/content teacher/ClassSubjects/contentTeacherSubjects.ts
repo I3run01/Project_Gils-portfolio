@@ -78,8 +78,7 @@ export const contentTeacherObj = [
         'Excel',
         'contentTeacher/Excel/excelIcon.svg',
         'contentTeacher/Excel/ExcelImage.png',
-        `Lorem ipsum dolor sit amet. Ut necessitatibus molestiae vel commodi officia vel vero consequatur et repellat deserunt aut repellat temporibus est molestiae praesentium. Ut fuga rerum et enim omnis ut dolore repudiandae. </p><p>Quo sint quia At laboriosam laudantium rem voluptatum galisum qui voluptas sint ut magnam voluptas rem accusantium omnis. Aut quae aspernatur ad sapiente quibusdam qui dolorem inventore sed odio illo qui consectetur nulla qui internos eius et natus enim? </p><p>Et officiis nesciunt sit dolores omnis vel dolore quia. Ea omnis aperiam est Quis aperiam vel consectetur voluptate aut doloribus internos et assumenda laborum et odit iusto.
-        `,
+        `Excel é uma planilha eletrônica desenvolvida pela Microsoft. Ele permite criar e editar planilhas com cálculos, gráficos e tabelas, além de oferecer diversas ferramentas de análise de dados e de automação de tarefas. É amplamente utilizado para gerenciamento de dados, análise financeira e outras tarefas de negócios.`,
         [],
         {
             colorRight_1: '#03733F',
