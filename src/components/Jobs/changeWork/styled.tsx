@@ -56,5 +56,22 @@ export const ChangeWorkStyled = styled.div<props>`
         }
     }
 
+    @media screen and (min-width: 1000px) {
+        #showWork {
+
+            left: 90px;
+            border-radius: 40px;
+            padding: 5px;
+
+            #symble {
+                width: 56px;
+            }
+        }
+
+        #nameOfwork {
+            font-size: 24px;
+        }
+    }
+
     
 `
