@@ -60,16 +60,16 @@ export const ChangeWorkStyled = styled.div<props>`
 
     #changeWork {
         position: fixed;
-        bottom: 20px;
+        bottom: 12px;
         left: 20px;
 
         display: flex;
         justify-content: space-between;
-        width: 80px;
+        width: 100px;
 
         div {
-            height: 12px;
-            width: 12px;
+            height: 15px;
+            width: 15px;
             border-radius: 50%;
 
             background-color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
