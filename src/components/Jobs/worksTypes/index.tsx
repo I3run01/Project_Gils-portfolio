@@ -1,27 +1,34 @@
+import { useContext } from 'react'
+import { Context } from '../../../contexts/Context'
 import { WorksTypesStyled } from './styled'
 
 type props = {
-    objects: {
-        title: string
-        icon: string
-        image: string
-        description: string
-        gallary:string[]
-        colors: {
-            colorRight_1: string
-            colorRight_2: string
-            colorLeft_1: string
-            colorLeft_2: string
-        }
-    }[]
+    title: string
+    icon: string
+    image: string
+    description: string
 }
 
 
-export const WorksTypes = ({objects}:props) => {
+export const WorksTypes = ({title, icon, image, description}:props) => {
+    
+    const {state, dispatch} = useContext(Context)
 
     return (
-        <WorksTypesStyled>
-            <h1>{objects[0].title}</h1>
+        <WorksTypesStyled theme={state.theme.status}>
+            <h1>{title}</h1>
+            <div id='container'>
+                <div id='image'>
+                    <img src={image} alt="" />
+                </div>
+                <div id='text'>
+                    <div id='textTitle'>
+                        <div id='symble'><img src={icon} alt="" /></div>
+                        <div id='nameOfwork'>{title}</div>
+                    </div>
+                    <p>{description}</p>
+                </div>
+            </div>
         </WorksTypesStyled>
     )
 }

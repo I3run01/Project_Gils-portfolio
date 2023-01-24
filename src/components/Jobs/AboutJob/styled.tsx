@@ -10,7 +10,6 @@ const fontColorLight = 'black'
 export const AboutJobStyled = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
-    min-height: 100vh;
     margin-top: 80px;
 
     h1 {
