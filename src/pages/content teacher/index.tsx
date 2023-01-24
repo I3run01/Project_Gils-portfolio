@@ -45,7 +45,7 @@ export const ContentTeacher = () => {
                     description={contentTeacherObj[index].description}
                 />
 
-                { contentTeacherObj[index].gallary &&
+                { renderGallary &&
                     <Gallary
                         gallary={contentTeacherObj[index].gallary}/>
                 }
