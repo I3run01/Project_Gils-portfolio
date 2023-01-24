@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AboutJob } from '../../components/Jobs/AboutJob'
 import { WorksTypes } from '../../components/Jobs/worksTypes'
 import { Gallary } from '../../components/Jobs/Gallary/'
@@ -9,6 +9,13 @@ import { contentTeacherObj } from './ClassSubjects/contentTeacherSubjects'
 
 export const ContentTeacher = () => {
     const [index, setIndex] = useState<number>(0)
+    const [renderGallary, setRenderGallary] = useState<boolean>(
+        contentTeacherObj[index].gallary.length > 0 ? true : false
+    )
+
+    useEffect(() => {
+        contentTeacherObj[index].gallary.length > 0 ? setRenderGallary(true) : setRenderGallary(false)
+    }, [index])
 
     const changeWorkLeft = () => {
         index <= 0 ? setIndex(contentTeacherObj.length-1) : setIndex(index - 1)
@@ -37,9 +44,13 @@ export const ContentTeacher = () => {
                     image={contentTeacherObj[index].image}
                     description={contentTeacherObj[index].description}
                 />
-                <Gallary
-                    gallary={contentTeacherObj[index].gallary}/>
-            </MainStyled>
+
+                { contentTeacherObj[index].gallary &&
+                    <Gallary
+                        gallary={contentTeacherObj[index].gallary}/>
+                }
+                
+                </MainStyled>
             
         </div>
     )
