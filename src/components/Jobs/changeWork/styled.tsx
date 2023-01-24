@@ -6,6 +6,8 @@ type props = {
 
 const fontColorDark = '#d2d2d2'
 const fontColorLight = 'black'
+const lightPurpleColor = '#590099'
+const darkPurpleColor = '#CFBDDB'
 
 export const ChangeWorkStyled = styled.div<props>`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
@@ -59,18 +61,24 @@ export const ChangeWorkStyled = styled.div<props>`
     #changeWork {
         position: fixed;
         bottom: 20px;
-        left: 100px;
+        left: 20px;
 
         display: flex;
         justify-content: space-between;
-        width: 150px;
+        width: 80px;
 
         div {
-            height: 10px;
-            width: 10px;
+            height: 12px;
+            width: 12px;
             border-radius: 50%;
 
             background-color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+
+            cursor: pointer;
+
+            :hover {
+                background-color: ${props => props.theme === 'dark' ? darkPurpleColor : lightPurpleColor};
+            }
         }
     }
 
