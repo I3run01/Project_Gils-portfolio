@@ -15,7 +15,7 @@ export const ContentTeacher = () => {
     }
 
     const changeWorkRight = () => {
-        index >= contentTeacherObj.length ? setIndex(0) : setIndex(index + 1)
+        index >= contentTeacherObj.length-1 ? setIndex(0) : setIndex(index + 1)
     }
 
     return (
