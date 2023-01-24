@@ -89,7 +89,6 @@ export const ChangeWorkStyled = styled.div<props>`
 
     @media screen and (min-width: 1000px) {
         #showWork {
-
             left: 90px;
             border-radius: 40px;
             padding: 5px;
@@ -104,6 +103,21 @@ export const ChangeWorkStyled = styled.div<props>`
         }
 
         #changeWork {
+            transform: translateX(50%);
+            bottom: 10px;
+            left: 50%;
+
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: .5px solid rgba(255, 255, 255, 0.1);
+            border-radius: 80px;
+
+            div {
+                height: 15px;
+                width: 15px; 
+            }
+
 
         }
     }
