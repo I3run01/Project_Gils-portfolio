@@ -60,26 +60,31 @@ export const ChangeWorkStyled = styled.div<props>`
 
     #changeWork {
         position: fixed;
-        bottom: 12px;
-        left: 20px;
+        bottom: 0px;
+        left: 10px;
 
         display: flex;
         justify-content: space-between;
-        width: 100px;
+        width: 120px;
 
-        div {
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
+        .divFather {
+            padding: 15px;
+            cursor: pointer; 
 
-            background-color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+            :hover div {
+                    background-color: ${props => props.theme === 'dark' ? darkPurpleColor : lightPurpleColor};
+            }
 
-            cursor: pointer;
-
-            :hover {
-                background-color: ${props => props.theme === 'dark' ? darkPurpleColor : lightPurpleColor};
+            div {
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+    
+                background-color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+   
             }
         }
+
     }
 
     @media screen and (min-width: 1000px) {
@@ -96,6 +101,10 @@ export const ChangeWorkStyled = styled.div<props>`
 
         #nameOfwork {
             font-size: 24px;
+        }
+
+        #changeWork {
+
         }
     }
 

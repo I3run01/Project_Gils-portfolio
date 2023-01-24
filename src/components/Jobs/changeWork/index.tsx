@@ -20,9 +20,9 @@ export const ChangeWork = ({title, icon, changeWorkLeft, changeWorkRight}: props
                 <div id='nameOfwork'>{title}</div>
             </div>
             <div id='changeWork'>
-                <div id='changeWorkLeft'></div>
-                <div></div>
-                <div id='changeWorkRight'></div>
+                <div className='divFather'><div></div></div>
+                <div className='divFather'><div></div></div>
+                <div className='divFather'><div></div></div>
             </div>
         </ChangeWorkStyled>
     )
