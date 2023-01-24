@@ -19,6 +19,11 @@ export const ChangeWork = ({title, icon, changeWorkLeft, changeWorkRight}: props
                 <div id='symble'> <img src={icon} alt="" /></div>
                 <div id='nameOfwork'>{title}</div>
             </div>
+            <div id='changeWork'>
+                <div id='changeWorkLeft'></div>
+                <div></div>
+                <div id='changeWorkRight'></div>
+            </div>
         </ChangeWorkStyled>
     )
 }

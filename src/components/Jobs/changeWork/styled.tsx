@@ -56,6 +56,24 @@ export const ChangeWorkStyled = styled.div<props>`
         }
     }
 
+    #changeWork {
+        position: fixed;
+        bottom: 20px;
+        left: 100px;
+
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+
+        div {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+
+            background-color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
+        }
+    }
+
     @media screen and (min-width: 1000px) {
         #showWork {
 
