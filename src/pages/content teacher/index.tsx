@@ -2,16 +2,29 @@ import { useState } from 'react'
 import { AboutJob } from '../../components/Jobs/AboutJob'
 import { WorksTypes } from '../../components/Jobs/worksTypes'
 import { Gallary } from '../../components/Jobs/Gallary/'
+import { ChangeWork } from '../../components/Jobs/changeWork'
 import { MainStyled } from '../../globalStyled'
 import { contentTeacherObj } from './ClassSubjects/contentTeacherSubjects'
 
 
 export const ContentTeacher = () => {
-
     const [index, setIndex] = useState<number>(0)
+
+    const changeWorkLeft = () => {
+        index <= 0 ? setIndex(contentTeacherObj.length-1) : setIndex(index - 1)
+    }
+
+    const changeWorkRight = () => {
+        index >= contentTeacherObj.length ? setIndex(0) : setIndex(index + 1)
+    }
 
     return (
         <div>
+            <ChangeWork
+            title={contentTeacherObj[index].title}
+            icon={contentTeacherObj[index].icon}
+            changeWorkLeft={changeWorkLeft}
+            changeWorkRight={changeWorkRight}/>
             <MainStyled>
                 <AboutJob
                     title='Professora conteúdista'

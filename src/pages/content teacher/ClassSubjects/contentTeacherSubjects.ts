@@ -73,5 +73,20 @@ export const contentTeacherObj = [
             colorLeft_1: '#918575',
             colorLeft_2: '#4A7B7D',
         }
+    ),
+    new contentTeacherSubjects (
+        'Excel',
+        'contentTeacher/Excel/excelIcon.svg',
+        'contentTeacher/Excel/ExcelImage.png',
+        `Lorem ipsum dolor sit amet. Ut necessitatibus molestiae vel commodi officia vel vero consequatur et repellat deserunt aut repellat temporibus est molestiae praesentium. Ut fuga rerum et enim omnis ut dolore repudiandae. </p><p>Quo sint quia At laboriosam laudantium rem voluptatum galisum qui voluptas sint ut magnam voluptas rem accusantium omnis. Aut quae aspernatur ad sapiente quibusdam qui dolorem inventore sed odio illo qui consectetur nulla qui internos eius et natus enim? </p><p>Et officiis nesciunt sit dolores omnis vel dolore quia. Ea omnis aperiam est Quis aperiam vel consectetur voluptate aut doloribus internos et assumenda laborum et odit iusto.
+        `,
+        [],
+        {
+            colorRight_1: '#03733F',
+            colorRight_2: '#365943',
+            colorLeft_1: '#F2916D',
+            colorLeft_2: '#BF4A3F',
+        }
     )
+    
 ] 
