@@ -21,10 +21,10 @@ export const ContentTeacher = () => {
     return (
         <div>
             <ChangeWork
-            title={contentTeacherObj[index].title}
-            icon={contentTeacherObj[index].icon}
-            changeWorkLeft={changeWorkLeft}
-            changeWorkRight={changeWorkRight}/>
+                title={contentTeacherObj[index].title}
+                icon={contentTeacherObj[index].icon}
+                changeWorkLeft={changeWorkLeft}
+                changeWorkRight={changeWorkRight}/>
             <MainStyled>
                 <AboutJob
                     title='Professora conteúdista'
