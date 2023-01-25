@@ -53,7 +53,7 @@ export const facilityObj = [
         'Suporte em TI',
         'facility/IT support/support IT icon.svg',
         'facility/IT support/support IT Image.png',
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        `Alguém que trabalha em suporte de TI é responsável por ajudar os usuários de uma empresa ou organização com problemas relacionados à tecnologia, como computadores, rede, software, dispositivos móveis e sistemas. Isso pode incluir coisas como resolver problemas de hardware ou software, configurar dispositivos, ajudar com a instalação de software e fornecer orientação sobre como usar diferentes tecnologias. O suporte de TI também pode incluir a manutenção preventiva e a monitoração de sistemas para garantir que eles estejam funcionando corretamente.`,
         [],
         {
             colorRight_1: '#6D8C7E',
