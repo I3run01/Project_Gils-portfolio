@@ -50,28 +50,16 @@ export class facilitySubjects {
 
 export const facilityObj = [
     new facilitySubjects(
-        'Robótica',
-        'contentTeacher/Robotics/roboticsImageIcon.svg',
-        'contentTeacher/Robotics/roboticsImage.png',
-        `Robótica é a área da tecnologia que se ocupa com o projeto, construção, operação e uso de robôs, bem como sistemas de computador para seu controle, feedback sensorial e processamento de informações. Essas tecnologias são usadas para desenvolver máquinas que podem substituir as funções humanas ou aumentar as habilidades humanas. A robótica envolve uma variedade de campos, incluindo engenharia mecânica, engenharia elétrica e ciência da computação. A robótica pode ser usada em uma ampla gama de aplicações, como fabricação, transporte, agricultura, saúde e muito mais.`,
-        [
-            'contentTeacher/Robotics/roboticsGallary/image 1.png',
-            'contentTeacher/Robotics/roboticsGallary/image 2.png',
-            'contentTeacher/Robotics/roboticsGallary/image 3.png',
-            'contentTeacher/Robotics/roboticsGallary/image 4.png',
-            'contentTeacher/Robotics/roboticsGallary/image 5.png',
-            'contentTeacher/Robotics/roboticsGallary/image 6.png',
-            'contentTeacher/Robotics/roboticsGallary/image 7.png',
-            'contentTeacher/Robotics/roboticsGallary/image 8.png',
-            'contentTeacher/Robotics/roboticsGallary/image 9.png',
-            'contentTeacher/Robotics/roboticsGallary/image 10.png',
-            'contentTeacher/Robotics/roboticsGallary/image 11.png',
-        ],
+        'Suporte em TI',
+        'facility/IT support.svg/support IT icon.svg',
+        'facility/IT support.svg/support IT Image.png',
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        [],
         {
-            colorRight_1: '#5E5054',
-            colorRight_2: '#B6424E',
-            colorLeft_1: '#918575',
-            colorLeft_2: '#4A7B7D',
+            colorRight_1: '#6D8C7E',
+            colorRight_2: '#A65A53',
+            colorLeft_1: '#168C80',
+            colorLeft_2: '#4BF2D4',
         }
     ),
 ] 

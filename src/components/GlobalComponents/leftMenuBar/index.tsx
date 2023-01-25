@@ -52,7 +52,7 @@ export const LeftMenuBar = () =>{
                     </div>
                 </div>  
                 <div id="workIcon">
-                    <div>
+                    <div onClick={() => Navigation('/facility')}>
                         <img src="menuIcons/Facility.svg" alt="" />
                         <h2>Facilitadora</h2>
                     </div>
