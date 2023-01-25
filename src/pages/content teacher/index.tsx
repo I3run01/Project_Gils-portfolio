@@ -6,7 +6,6 @@ import { ChangeWork } from '../../components/Jobs/changeWork'
 import { MainStyled } from '../../globalStyled'
 import { contentTeacherObj } from './ClassSubjects/contentTeacherSubjects'
 
-
 export const ContentTeacher = () => {
     const [index, setIndex] = useState<number>(0)
     const [renderGallary, setRenderGallary] = useState<boolean>(
@@ -48,10 +47,8 @@ export const ContentTeacher = () => {
                 { renderGallary &&
                     <Gallary
                         gallary={contentTeacherObj[index].gallary}/>
-                }
-                
-                </MainStyled>
-            
+                } 
+            </MainStyled>
         </div>
     )
 }

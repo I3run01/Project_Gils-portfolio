@@ -66,6 +66,7 @@ export const ChangeWorkStyled = styled.div<props>`
         display: flex;
         justify-content: space-between;
         width: 120px;
+        z-index: 10;
 
         .divFather {
             padding: 15px;
