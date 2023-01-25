@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { AboutJob } from '../../components/Jobs/AboutJob'
 import { WorksTypes } from '../../components/Jobs/worksTypes'
 import { Gallary } from '../../components/Jobs/Gallary/'
 import { ChangeWork } from '../../components/Jobs/changeWork'
 import { MainStyled } from '../../globalStyled'
 import { contentTeacherObj } from './ClassSubjects/contentTeacherSubjects'
+import { Context } from '../../contexts/Context'
 
 export const ContentTeacher = () => {
+    const {state, dispatch} = useContext(Context)
     const [index, setIndex] = useState<number>(0)
     const [renderGallary, setRenderGallary] = useState<boolean>(
         contentTeacherObj[index].gallary.length > 0 ? true : false
@@ -14,7 +16,12 @@ export const ContentTeacher = () => {
 
     useEffect(() => {
         contentTeacherObj[index].gallary.length > 0 ? setRenderGallary(true) : setRenderGallary(false)
+        changeBkColor()
     }, [index])
+
+    useEffect(() => {
+        changeBkColor()
+    },[])
 
     const changeWorkLeft = () => {
         index <= 0 ? setIndex(contentTeacherObj.length-1) : setIndex(index - 1)
@@ -22,6 +29,36 @@ export const ContentTeacher = () => {
 
     const changeWorkRight = () => {
         index >= contentTeacherObj.length-1 ? setIndex(0) : setIndex(index + 1)
+    }
+
+    const changeBkColor = () => {
+        dispatch({
+            type: 'changeColor',
+            payload: {
+                rightColor_1: contentTeacherObj[index].colors.colorRight_1
+            }
+        })
+
+        dispatch({
+            type: 'changeColor',
+            payload: {
+                rightColor_2: contentTeacherObj[index].colors.colorRight_2
+            }
+        })
+
+        dispatch({
+            type: 'changeColor',
+            payload: {
+                leftColor_1: contentTeacherObj[index].colors.colorLeft_1
+            }
+        })
+
+        dispatch({
+            type: 'changeColor',
+            payload: {
+                leftColor_2: contentTeacherObj[index].colors.colorLeft_2
+            }
+        })
     }
 
     return (

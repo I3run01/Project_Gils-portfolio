@@ -9,7 +9,12 @@ import { Context } from '../../contexts/Context'
 export const Home = () => {
     const {state, dispatch} = useContext(Context)
 
+    useEffect(() => {
+        changeBkColor() 
+    },[])
+
     const changeBkColor = () => {
+        
         dispatch({
             type: 'changeColor',
             payload: {
@@ -39,9 +44,7 @@ export const Home = () => {
         })
     }
 
-    useEffect(() => {
-        changeBkColor() 
-    })
+    
 
     return (
         <div>
