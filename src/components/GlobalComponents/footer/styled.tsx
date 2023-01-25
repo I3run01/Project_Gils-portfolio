@@ -103,6 +103,36 @@ export const FooterStyled = styled.div<props>`
         }
     }
 
+    @media screen and (min-width: 1000px) {
+        
+        #socialMedias {
+            flex-direction: row;
+
+            #mediasTXT {
+                margin-right: 20px;
+                
+                p {
+                    font-size: 24px;
+
+                    ::after {
+                        content: ' :';
+                        color: black;
+                    }
+                }
+            }
+
+            #allMedias {
+                
+                a {
+                    width: 40px;
+
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
     
 
 `
