@@ -51,8 +51,21 @@ export class servicesClass {
 export const servicesObj = [
     new servicesClass (
         'Excel',
-        'contentTeacher/Excel/excelIcon.svg',
-        'contentTeacher/Excel/ExcelImage.png',
+        'Services/Excel/excelIcon.svg',
+        'Services/Excel/ExcelImage.png',
+        `Excel é uma planilha eletrônica desenvolvida pela Microsoft. Ele permite criar e editar planilhas com cálculos, gráficos e tabelas, além de oferecer diversas ferramentas de análise de dados e de automação de tarefas. É amplamente utilizado para gerenciamento de dados, análise financeira e outras tarefas de negócios.`,
+        [],
+        {
+            colorRight_1: '#03733F',
+            colorRight_2: '#365943',
+            colorLeft_1: '#F2916D',
+            colorLeft_2: '#BF4A3F',
+        }
+    ),
+    new servicesClass (
+        'Manuais de robótica',
+        'Services/Excel/robot manual icon.svg',
+        'Services/Excel/ExcelImage.png',
         `Excel é uma planilha eletrônica desenvolvida pela Microsoft. Ele permite criar e editar planilhas com cálculos, gráficos e tabelas, além de oferecer diversas ferramentas de análise de dados e de automação de tarefas. É amplamente utilizado para gerenciamento de dados, análise financeira e outras tarefas de negócios.`,
         [],
         {

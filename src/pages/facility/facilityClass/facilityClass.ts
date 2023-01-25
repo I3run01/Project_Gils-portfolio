@@ -62,4 +62,19 @@ export const facilityObj = [
             colorLeft_2: '#4BF2D4',
         }
     ),
+    new facilitySubjects(
+        'Facilitadora HTML e CSS',
+        'facility/HTML e CSS/HtmlCss icon.svg',
+        'facility/HTML e CSS/HTML e CSS image.png',
+        `HTML (Hypertext Markup Language) é uma linguagem de marcação utilizada para criar páginas da web. Ele é usado para estruturar o conteúdo de uma página, como texto, imagens, vídeos e links. As tags HTML são usadas para indicar diferentes elementos da página, como cabeçalhos, parágrafos, listas e tabelas.
+
+        CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência visual de uma página HTML. Ele é usado para controlar coisas como cor de fundo, tipos de letra, espaçamento e posicionamento de elementos na página. As regras CSS são aplicadas a elementos HTML específicos, permitindo que você dê estilo consistente a toda a sua página ou site.`,
+        [],
+        {
+            colorRight_1: '#F2D091',
+            colorRight_2: '#F29D35',
+            colorLeft_1: '#BF382C',
+            colorLeft_2: '#593A15',
+        }
+    ),
 ] 
