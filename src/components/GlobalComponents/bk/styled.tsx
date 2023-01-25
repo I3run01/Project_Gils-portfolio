@@ -27,10 +27,15 @@ export const BackgroundStyled = styled.div<props>`
     transition: all  0.5s ease-in-out;
 
     #rightCircle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         position: fixed;
         top: -60vh;
         right: -60vh;
-        background-image: linear-gradient(232.06deg, ${props => props.rightColor_1} 29.56%, ${props => props.rightColor_2} 95.03%);
+        
+        background-color: ${props => props.rightColor_1};
         filter: blur(125px);
         
         border-radius: 50%;
@@ -38,13 +43,30 @@ export const BackgroundStyled = styled.div<props>`
         height: 120vh;
 
         transition: all 0.5s ease-in-out;
+
+        div {
+            width: 60%;
+            height: 60%;
+
+            background-color: ${props => props.rightColor_2};
+            filter: blur(125px);
+            
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+
+        }
     }
 
     #leftCircle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         position: fixed;
         bottom: -40vh;
         left: -40vh;
-        background-image: linear-gradient(229deg, ${props => props.leftColor_1} 31.48%, ${props => props.leftColor_2} 74.63%);
+
+        background-color: ${props => props.leftColor_1};
         filter: blur(125px);
         
         border-radius: 50%;
@@ -53,6 +75,17 @@ export const BackgroundStyled = styled.div<props>`
 
         transition: all 0.5s ease-in-out;
 
+        div {
+            width: 60%;
+            height: 60%;
+
+            background-color: ${props => props.leftColor_2};
+            filter: blur(125px);
+            
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+
+        }
         
     }
 

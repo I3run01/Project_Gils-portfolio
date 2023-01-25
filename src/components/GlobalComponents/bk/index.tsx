@@ -14,10 +14,10 @@ export const BackGround = () => {
          leftColor_2={state.color.leftColor_2}
         >
             <div id='rightCircle'>
-
+                <div></div>
             </div>
             <div id='leftCircle'>
-                
+                <div></div>
             </div>
         </BackgroundStyled>
     )
