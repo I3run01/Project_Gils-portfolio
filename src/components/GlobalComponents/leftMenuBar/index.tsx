@@ -9,7 +9,7 @@ export const LeftMenuBar = () =>{
 
     const navigate = useNavigate()
 
-    const [menuOpen, setMenuOpen] = useState<string>('opened')
+    const [menuOpen, setMenuOpen] = useState<string>('closed')
 
     const changeTheme = () => {
         if( state.theme.status === 'dark' ) {
