@@ -4,18 +4,18 @@ import { WorksTypes } from '../../components/Jobs/worksTypes'
 import { Gallary } from '../../components/Jobs/Gallary/'
 import { ChangeWork } from '../../components/Jobs/changeWork'
 import { MainStyled } from '../../globalStyled'
-import { contentTeacherObj } from './ClassSubjects/facilityClass'
+import { facilityObj } from './ClassSubjects/facilityClass'
 import { Context } from '../../contexts/Context'
 
 export const Facility = () => {
     const {state, dispatch} = useContext(Context)
     const [index, setIndex] = useState<number>(0)
     const [renderGallary, setRenderGallary] = useState<boolean>(
-        contentTeacherObj[index].gallary.length > 0 ? true : false
+        facilityObj[index].gallary.length > 0 ? true : false
     )
 
     useEffect(() => {
-        contentTeacherObj[index].gallary.length > 0 ? setRenderGallary(true) : setRenderGallary(false)
+        facilityObj[index].gallary.length > 0 ? setRenderGallary(true) : setRenderGallary(false)
         changeBkColor()
     }, [index])
 
@@ -24,11 +24,11 @@ export const Facility = () => {
     },[])
 
     const changeWorkLeft = () => {
-        index <= 0 ? setIndex(contentTeacherObj.length-1) : setIndex(index - 1)
+        index <= 0 ? setIndex(facilityObj.length-1) : setIndex(index - 1)
     }
 
     const changeWorkRight = () => {
-        index >= contentTeacherObj.length-1 ? setIndex(0) : setIndex(index + 1)
+        index >= facilityObj.length-1 ? setIndex(0) : setIndex(index + 1)
     }
 
     const changeBkColor = () => {
@@ -36,28 +36,28 @@ export const Facility = () => {
         dispatch({
             type: 'changerightColor_1',
             payload: {
-                rightColor_1: contentTeacherObj[index].colors.colorRight_1
+                rightColor_1: facilityObj[index].colors.colorRight_1
             }
         })
 
         dispatch({
             type: 'changerightColor_2',
             payload: {
-                rightColor_2: contentTeacherObj[index].colors.colorRight_2
+                rightColor_2: facilityObj[index].colors.colorRight_2
             }
         })
 
         dispatch({
             type: 'changeleftColor_1',
             payload: {
-                leftColor_1: contentTeacherObj[index].colors.colorLeft_1
+                leftColor_1: facilityObj[index].colors.colorLeft_1
             }
         })
 
         dispatch({
             type: 'changeleftColor_2',
             payload: {
-                leftColor_2: contentTeacherObj[index].colors.colorLeft_2
+                leftColor_2: facilityObj[index].colors.colorLeft_2
             }
         })
 
@@ -70,8 +70,8 @@ export const Facility = () => {
     return (
         <div>
             <ChangeWork
-                title={contentTeacherObj[index].title}
-                icon={contentTeacherObj[index].icon}
+                title={facilityObj[index].title}
+                icon={facilityObj[index].icon}
                 changeWorkLeft={changeWorkLeft}
                 changeWorkRight={changeWorkRight}/>
             <MainStyled>
@@ -82,15 +82,15 @@ export const Facility = () => {
                     "
                 />
                 <WorksTypes
-                    title={contentTeacherObj[index].title}
-                    icon={contentTeacherObj[index].icon}
-                    image={contentTeacherObj[index].image}
-                    description={contentTeacherObj[index].description}
+                    title={facilityObj[index].title}
+                    icon={facilityObj[index].icon}
+                    image={facilityObj[index].image}
+                    description={facilityObj[index].description}
                 />
 
                 { renderGallary &&
                     <Gallary
-                        gallary={contentTeacherObj[index].gallary}/>
+                        gallary={facilityObj[index].gallary}/>
                 } 
             </MainStyled>
         </div>
