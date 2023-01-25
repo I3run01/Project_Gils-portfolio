@@ -15,7 +15,7 @@ export const ChangeWorkStyled = styled.div<props>`
     #showWork {
         z-index: 1;
         position: fixed;
-        bottom: 40px;
+        bottom: 75px;
         left: 5px;
 
         display: flex;
@@ -105,7 +105,7 @@ export const ChangeWorkStyled = styled.div<props>`
 
         #changeWork {
             transform: translateX(50%);
-            bottom: 10px;
+            bottom: 30px;
             left: 50%;
 
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
