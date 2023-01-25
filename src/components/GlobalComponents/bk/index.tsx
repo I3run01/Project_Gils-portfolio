@@ -8,7 +8,8 @@ export const BackGround = () => {
     return (
         <BackgroundStyled
          theme={state.theme.status}>
-            <img src="bkImage/bk.png" alt="" />
+            <div id='rightCircle'></div>
+            <div id='leftCircle'></div>
         </BackgroundStyled>
     )
 }
