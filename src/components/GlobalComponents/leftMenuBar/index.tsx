@@ -56,7 +56,7 @@ export const LeftMenuBar = () =>{
                         <img src="menuIcons/Facility.svg" alt="" />
                         <h2>Facilitadora</h2>
                     </div>
-                    <div>
+                    <div onClick={() => Navigation('/services')}>
                         <img src="menuIcons/Services.svg" alt="" />
                         <h2>Serviços</h2>
                     </div>
