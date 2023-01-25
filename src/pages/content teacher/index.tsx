@@ -32,33 +32,25 @@ export const ContentTeacher = () => {
     }
 
     const changeBkColor = () => {
+
         dispatch({
-            type: 'changeColor',
+            type: 'changerightColor_1',
             payload: {
                 rightColor_1: contentTeacherObj[index].colors.colorRight_1
             }
         })
 
         dispatch({
-            type: 'changeColor',
+            type: 'changerightColor_2',
             payload: {
-                rightColor_2: contentTeacherObj[index].colors.colorRight_2
+                rightColor_2: 'green'
             }
         })
 
-        dispatch({
-            type: 'changeColor',
-            payload: {
-                leftColor_1: contentTeacherObj[index].colors.colorLeft_1
-            }
-        })
 
-        dispatch({
-            type: 'changeColor',
-            payload: {
-                leftColor_2: contentTeacherObj[index].colors.colorLeft_2
-            }
-        })
+
+
+
     }
 
     return (

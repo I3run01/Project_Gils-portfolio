@@ -14,30 +14,30 @@ export const Home = () => {
     },[])
 
     const changeBkColor = () => {
-        
+
         dispatch({
-            type: 'changeColor',
+            type: 'changeRightColor_1',
             payload: {
                 rightColor_1: '#404ABF'
             }
         })
 
         dispatch({
-            type: 'changeColor',
+            type: 'changeRightColor_2',
             payload: {
                 rightColor_2: '#8C33CC'
             }
         })
 
         dispatch({
-            type: 'changeColor',
+            type: 'changeLeftColor_1',
             payload: {
                 leftColor_1: '#CC3DAA'
             }
         })
 
         dispatch({
-            type: 'changeColor',
+            type: 'changeLeftColor_2',
             payload: {
                 leftColor_2: '#322BD9'
             }

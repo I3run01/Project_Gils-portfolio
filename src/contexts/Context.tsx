@@ -4,7 +4,7 @@ import { reducerActionType } from "../types/reducerActionsType";
 
 //Imports
 import { themeReducer, themeInitialState, ThemeType  } from "../reducers/themeReducer";
-import { colorReducer, colorInitialState, ColorsType } from '../reducers/bkColorsReducer'
+import { ColorReducer, ColorInitialState, ColorsType } from '../reducers/bkColorsReducer'
 
 //Campo editável
 type initialStateType = {
@@ -20,7 +20,7 @@ type ContextType = {
 ///Campo editável
 const initialState = {
     theme: themeInitialState,
-    color: colorInitialState
+    color: ColorInitialState
 }
 
 
@@ -33,7 +33,7 @@ export const Context = createContext<ContextType>({
 ///Campo editável
 const mainReducer = (state: initialStateType, action: reducerActionType) => ({
     theme: themeReducer(state.theme, action),
-    color: colorReducer(state.color, action)
+    color: ColorReducer(state.color, action)
 })
 
 export const ContextProvider: React.FC<{children: React.ReactNode}> = ({children}) => {
