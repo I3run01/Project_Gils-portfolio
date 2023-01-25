@@ -76,9 +76,10 @@ export const Facility = () => {
                 changeWorkRight={changeWorkRight}/>
             <MainStyled>
                 <AboutJob
-                    title='Professora conteúdista'
-                    subtitile='O que faz uma professora conteúdista?'
-                    description="Uma professora conteudista é responsável por desenvolver o conteúdo de ensino e as estratégias de ensino para uma determinada disciplina ou área de estudo. Isso inclui a seleção e adaptação de materiais de ensino, a elaboração de planos de aula e a avaliação do progresso dos alunos. Ela também pode fornecer orientação e treinamento a outros professores, ajudando-os a implementar o conteúdo e as estratégias de ensino de maneira eficaz."
+                    title='Facilitdora'
+                    subtitile='O que faz uma professora facilitadora?'
+                    description="Uma facilitadora é alguém que ajuda a garantir que uma reunião, treinamento ou outro evento seja conduzido de maneira eficiente e produtiva. Isso pode incluir garantir que todos os participantes tenham a oportunidade de falar, ajudar a manter o evento no horário e garantir que as metas e objetivos do evento sejam alcançados.
+                    "
                 />
                 <WorksTypes
                     title={contentTeacherObj[index].title}

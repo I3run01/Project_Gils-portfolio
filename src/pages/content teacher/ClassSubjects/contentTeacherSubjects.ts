@@ -6,7 +6,7 @@ type colors = {
     colorLeft_2: string
 }
 
-export class facilityClass {
+export class contentTeacherSubjects {
     private _title: string;
     private _icon: string;
     private _image: string;
@@ -49,19 +49,43 @@ export class facilityClass {
 }
 
 export const contentTeacherObj = [
-    new facilityClass(
-        'Suporte TI',
-        'facility/IT support/support IT icon.svg',
-        'facility/IT support/support IT Image.svg',
-        `Alguém que trabalha com suporte em TI é responsável por fornecer assistência técnica aos usuários de computadores e outros dispositivos eletrônicos. Isso pode incluir ajudar os usuários a resolver problemas técnicos, instalar e configurar software, resolver problemas de rede e garantir que os sistemas estejam funcionando corretamente. Eles também podem fornecer treinamento e orientação sobre como usar os equipamentos e software.`,
-        [],
+    new contentTeacherSubjects(
+        'Robótica',
+        'contentTeacher/Robotics/roboticsImageIcon.svg',
+        'contentTeacher/Robotics/roboticsImage.png',
+        `Robótica é a área da tecnologia que se ocupa com o projeto, construção, operação e uso de robôs, bem como sistemas de computador para seu controle, feedback sensorial e processamento de informações. Essas tecnologias são usadas para desenvolver máquinas que podem substituir as funções humanas ou aumentar as habilidades humanas. A robótica envolve uma variedade de campos, incluindo engenharia mecânica, engenharia elétrica e ciência da computação. A robótica pode ser usada em uma ampla gama de aplicações, como fabricação, transporte, agricultura, saúde e muito mais.`,
+        [
+            'contentTeacher/Robotics/roboticsGallary/image 1.png',
+            'contentTeacher/Robotics/roboticsGallary/image 2.png',
+            'contentTeacher/Robotics/roboticsGallary/image 3.png',
+            'contentTeacher/Robotics/roboticsGallary/image 4.png',
+            'contentTeacher/Robotics/roboticsGallary/image 5.png',
+            'contentTeacher/Robotics/roboticsGallary/image 6.png',
+            'contentTeacher/Robotics/roboticsGallary/image 7.png',
+            'contentTeacher/Robotics/roboticsGallary/image 8.png',
+            'contentTeacher/Robotics/roboticsGallary/image 9.png',
+            'contentTeacher/Robotics/roboticsGallary/image 10.png',
+            'contentTeacher/Robotics/roboticsGallary/image 11.png',
+        ],
         {
-            colorRight_1: '#605951',
-            colorRight_2: '#A65A53',
-            colorLeft_1: '#168C80',
-            colorLeft_2: '#304144',
+            colorRight_1: '#5E5054',
+            colorRight_2: '#B6424E',
+            colorLeft_1: '#918575',
+            colorLeft_2: '#4A7B7D',
         }
     ),
-
+    new contentTeacherSubjects (
+        'Excel',
+        'contentTeacher/Excel/excelIcon.svg',
+        'contentTeacher/Excel/ExcelImage.png',
+        `Excel é uma planilha eletrônica desenvolvida pela Microsoft. Ele permite criar e editar planilhas com cálculos, gráficos e tabelas, além de oferecer diversas ferramentas de análise de dados e de automação de tarefas. É amplamente utilizado para gerenciamento de dados, análise financeira e outras tarefas de negócios.`,
+        [],
+        {
+            colorRight_1: '#03733F',
+            colorRight_2: '#365943',
+            colorLeft_1: '#F2916D',
+            colorLeft_2: '#BF4A3F',
+        }
+    )
     
 ] 

@@ -6,7 +6,7 @@ type colors = {
     colorLeft_2: string
 }
 
-export class contentTeacherSubjects {
+export class facilitySubjects {
     private _title: string;
     private _icon: string;
     private _image: string;
@@ -48,8 +48,8 @@ export class contentTeacherSubjects {
     }
 }
 
-export const contentTeacherObj = [
-    new contentTeacherSubjects(
+export const facilityObj = [
+    new facilitySubjects(
         'Robótica',
         'contentTeacher/Robotics/roboticsImageIcon.svg',
         'contentTeacher/Robotics/roboticsImage.png',
@@ -74,18 +74,4 @@ export const contentTeacherObj = [
             colorLeft_2: '#4A7B7D',
         }
     ),
-    new contentTeacherSubjects (
-        'Excel',
-        'contentTeacher/Excel/excelIcon.svg',
-        'contentTeacher/Excel/ExcelImage.png',
-        `Excel é uma planilha eletrônica desenvolvida pela Microsoft. Ele permite criar e editar planilhas com cálculos, gráficos e tabelas, além de oferecer diversas ferramentas de análise de dados e de automação de tarefas. É amplamente utilizado para gerenciamento de dados, análise financeira e outras tarefas de negócios.`,
-        [],
-        {
-            colorRight_1: '#03733F',
-            colorRight_2: '#365943',
-            colorLeft_1: '#F2916D',
-            colorLeft_2: '#BF4A3F',
-        }
-    )
-    
 ] 
