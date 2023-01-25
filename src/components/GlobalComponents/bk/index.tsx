@@ -7,7 +7,12 @@ export const BackGround = () => {
 
     return (
         <BackgroundStyled
-         theme={state.theme.status}>
+         theme={state.theme.status}
+         rightColor_1={state.color.rightColor_1}
+         rightColor_2={state.color.rightColor_2}
+         leftColor_1={state.color.leftColor_1}
+         leftColor_2={state.color.leftColor_2}
+        >
             <div id='rightCircle'></div>
             <div id='leftCircle'></div>
         </BackgroundStyled>

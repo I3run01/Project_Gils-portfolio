@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 type props = {
     theme: 'dark' | 'light'
+    rightColor_1: string
+    rightColor_2: string
+    leftColor_1: string
+    leftColor_2: string
 }
 
 const lightBG = '#E6E0DC'
 const darkBG = '#151433'
-const rightColor_1 = '#404ABF'
-const rightColor_2 = '#8C33CC'
-const leftColor_1 = '#CC3DAA'
-const leftColor_2 = '#322BD9'
 
 export const BackgroundStyled = styled.div<props>`
     position: fixed;
@@ -30,7 +30,7 @@ export const BackgroundStyled = styled.div<props>`
         position: fixed;
         top: -60vh;
         right: -60vh;
-        background: linear-gradient(232.06deg, ${rightColor_1} 29.56%, ${rightColor_2} 95.03%);
+        background: linear-gradient(232.06deg, ${props => props.rightColor_1} 29.56%, ${props => props.rightColor_2} 95.03%);
         filter: blur(125px);
         
         border-radius: 50%;
@@ -42,7 +42,7 @@ export const BackgroundStyled = styled.div<props>`
         position: fixed;
         bottom: -40vh;
         left: -40vh;
-        background: linear-gradient(229deg, ${leftColor_1} 31.48%, ${leftColor_2} 74.63%);
+        background: linear-gradient(229deg, ${props => props.leftColor_1} 31.48%, ${props => props.leftColor_2} 74.63%);
         filter: blur(125px);
         
         border-radius: 50%;
