@@ -16,28 +16,28 @@ export const Home = () => {
     const changeBkColor = () => {
 
         dispatch({
-            type: 'changeRightColor_1',
+            type: 'changerightColor_1',
             payload: {
                 rightColor_1: '#404ABF'
             }
         })
 
         dispatch({
-            type: 'changeRightColor_2',
+            type: 'changerightColor_2',
             payload: {
                 rightColor_2: '#8C33CC'
             }
         })
 
         dispatch({
-            type: 'changeLeftColor_1',
+            type: 'changeleftColor_1',
             payload: {
                 leftColor_1: '#CC3DAA'
             }
         })
 
         dispatch({
-            type: 'changeLeftColor_2',
+            type: 'changeleftColor_2',
             payload: {
                 leftColor_2: '#322BD9'
             }

@@ -30,24 +30,30 @@ export const BackgroundStyled = styled.div<props>`
         position: fixed;
         top: -60vh;
         right: -60vh;
-        background: linear-gradient(232.06deg, ${props => props.rightColor_1} 29.56%, ${props => props.rightColor_2} 95.03%);
+        background-image: linear-gradient(232.06deg, ${props => props.rightColor_1} 29.56%, ${props => props.rightColor_2} 95.03%);
         filter: blur(125px);
         
         border-radius: 50%;
         width: 120vh;
         height: 120vh;
+
+        transition: all 0.5s ease-in-out;
     }
 
     #leftCircle {
         position: fixed;
         bottom: -40vh;
         left: -40vh;
-        background: linear-gradient(229deg, ${props => props.leftColor_1} 31.48%, ${props => props.leftColor_2} 74.63%);
+        background-image: linear-gradient(229deg, ${props => props.leftColor_1} 31.48%, ${props => props.leftColor_2} 74.63%);
         filter: blur(125px);
         
         border-radius: 50%;
         width: 80vh;
         height: 80vh;
+
+        transition: all 0.5s ease-in-out;
+
+        
     }
 
     @media screen and (min-width: 800px) {
