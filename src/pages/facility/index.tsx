@@ -60,11 +60,6 @@ export const Facility = () => {
                 leftColor_2: facilityObj[index].colors.colorLeft_2
             }
         })
-
-
-
-
-
     }
 
     return (

@@ -98,6 +98,157 @@ export const Jobs = [
                 
             }
         ],
+    ),
+    new Experince(
+        'Discovery Talents Education',
+        '',
+        [
+            {
+                job: "Coordenadora Técnica Pedagógica de Robótica",
+                local: 'Curitiba, Paraná, Brasil',
+                describe: `Coordenar e ministrar aulas de robótica educacional presencial e on-line, auxiliar os alunos com dúvidas, fazer o acompanhamento do desempenho, controle da evasão e prospecção de futuros alunos.`,
+                skill: 'Arduino · SolidWorks · Liderança · Scratch (Linguagem de programação) · Robótica · BBC micro:bit',
+                start: {
+                    startMonth: 2,
+                    startYear: 2020,
+                },
+                end:{
+                    endMonth: 9,
+                    endYear: 2021
+                },
+                
+            },
+        ],
+    ),
+    new Experince(
+        'JA Brasil',
+        'businessIcons/JA Brasil Icon.png',
+        [
+            {
+                job: 'Facilitadora HTML e CSS',
+                local: 'Curitiba, Paraná, Brasil',
+                describe: `Ministrar aula remotas, orientação dos alunos no plantão de dúvidas e acompanhamento de desempenho nas atividades diárias e entregas semanais, para a conclusão e publicação do site em HTML e CSS por meio do GitHub Pages. Participação na implementação de estratégias que minimizam o risco de evasão.`,
+                skill: 'HTML · GitHub · CSS · Visual Studio Code',
+                start: {
+                    startMonth: 7,
+                    startYear: 2020,
+                },
+                end:{
+                    endMonth: 9,
+                    endYear: 2020
+                },
+                
+            },
+        ],
+    ),
+    new Experince(
+        'Dream School Brasil',
+        '',
+        [
+            {
+                job: 'Coordenadora Educacional',
+                local: 'Itararé, São Paulo, Brasil',
+                describe: `Orientação dos alunos segundo a metodologia de ensino, auxílio de alunos e não alunos no processo de encaminhamento profissional, instalação de softwares, controle de andamento, conclusão, evasão e opinião dos alunos.`,
+                skill: 'Treinamento de funcionários · Microsoft Excel · Liderança',
+                start: {
+                    startMonth: 7,
+                    startYear: 2018,
+                },
+                end:{
+                    endMonth: 1,
+                    endYear: 2020
+                },
+                
+            },
+        ],
+    ),
+    new Experince(
+        'Preparas CUrsos',
+        'businessIcons/Prepara Icon.png',
+        [
+            {
+                job: 'Coordenadora EAndragógica',
+                local: 'Itararé, São Paulo, Brasil',
+                describe: `Ajudar no esclarecimento de dúvidas dos alunos segundo a metodologia de ensino, realização de dinâmicas com os alunos em sala de aula, instalação de softwares, manutenção preventiva, testes dos novos cursos, orientação e preparação dos alunos para o mercado de trabalho, reuniões com pais e responsáveis, emissão de relatórios de presenças e faltas, desempenho, acompanhamento e elaboração de estratégias para evitar a evasão dos alunos, treinamento de colaboradores.`,
+                skill: 'Treinamento de funcionários · Microsoft Excel · Liderança',
+                start: {
+                    startMonth: 12,
+                    startYear: 2014,
+                },
+                end:{
+                    endMonth: 8,
+                    endYear: 2018
+                },
+                
+            },
+            {
+                job: 'Professora',
+                local: 'Itararé, São Paulo, Brasil',
+                describe: `Ajudar no esclarecimento de dúvidas dos alunos segundo a metodologia de ensino, realização de dinâmicas com os alunos em sala de aula, instalação de softwares, manutenção preventiva, testes dos novos cursos, orientação e preparação dos alunos para o mercado de trabalho, reuniões com pais e responsáveis.`,
+                skill: 'Visual Basic · VBA (Visual Basic for Applications) · Delphi · AutoCAD · Desenvolvimento de Games 2D',
+                start: {
+                    startMonth: 9,
+                    startYear: 2013,
+                },
+                end:{
+                    endMonth: 11,
+                    endYear: 2014
+                },
+                
+            },
+        ],
         
-    )
+    ),
+    new Experince(
+        'Info Brasil',
+        '',
+        [
+            {
+                job: 'Instrutora de cursos profissionalizantes',
+                local: 'Itararé, São Paulo, Brasil',
+                describe: `Orientar e instruir os alunos segundo a metodologia de ensino, recepção e ambientação de novos alunos, realização de aulas experimentais, instalação de softwares, testes dos novos cursos, acompanhamento de presenças e faltas, reuniões com pais e responsáveis.`,
+                skill: '',
+                start: {
+                    startMonth: 10,
+                    startYear: 2012,
+                },
+                end:{
+                    endMonth: 10,
+                    endYear: 2013
+                },
+                
+            },
+            {
+                job: 'Auxiliar de sala de aula',
+                local: 'Itararé, São Paulo, Brasil',
+                describe: `Auxiliar os alunos em suas dúvidas com relação aos cursos de informática e profissionalizantes, recepção e ambientação de novos alunos, realização de aulas experimentais, instalação de softwares, testes dos novos cursos.`,
+                skill: '',
+                start: {
+                    startMonth: 10,
+                    startYear: 2011,
+                },
+                end:{
+                    endMonth: 7,
+                    endYear: 2012
+                },
+                
+            },
+            {
+                job: 'Estágiaria',
+                local: 'Itararé, São Paulo, Brasil',
+                describe: `Auxiliar os alunos em suas dúvidas com relação aos cursos de informática e profissionalizantes.`,
+                skill: '',
+                start: {
+                    startMonth: 10,
+                    startYear: 2010,
+                },
+                end:{
+                    endMonth: 7,
+                    endYear: 2011
+                },
+                
+            },
+        ],
+        
+    ),
 ]
