@@ -4,7 +4,7 @@ import { WorksTypes } from '../../components/Jobs/worksTypes'
 import { Gallary } from '../../components/Jobs/Gallary/'
 import { ChangeWork } from '../../components/Jobs/changeWork'
 import { MainStyled } from '../../globalStyled'
-import { facilityObj } from './ClassSubjects/facilityClass'
+import { facilityObj } from './facilityClass/facilityClass'
 import { Context } from '../../contexts/Context'
 
 export const Facility = () => {
