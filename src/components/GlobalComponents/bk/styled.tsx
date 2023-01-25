@@ -6,7 +6,7 @@ type props = {
 
 const lightBG = '#E6E0DC'
 const darkBG = '#151433'
-const rightColor_1 = 'rgb(64, 74, 191)'
+const rightColor_1 = '#404ABF'
 const rightColor_2 = '#8C33CC'
 const leftColor_1 = '#CC3DAA'
 const leftColor_2 = '#322BD9'
