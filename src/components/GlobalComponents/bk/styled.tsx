@@ -42,7 +42,7 @@ export const BackgroundStyled = styled.div<props>`
         width: 120vh;
         height: 120vh;
 
-        transition: all 0.1s ease-in-out;
+        transition: all 0.05s ease-in-out;
 
         div {
             width: 60%;
@@ -52,7 +52,7 @@ export const BackgroundStyled = styled.div<props>`
             filter: blur(125px);
             
             border-radius: 50%;
-            transition: all 0.1s ease-in-out;
+            transition: all 0.05s ease-in-out;
 
         }
     }
@@ -73,7 +73,7 @@ export const BackgroundStyled = styled.div<props>`
         width: 80vh;
         height: 80vh;
 
-        transition: all 0.1s ease-in-out;
+        transition: all 0.05s ease-in-out;
 
         div {
             width: 60%;
@@ -83,7 +83,7 @@ export const BackgroundStyled = styled.div<props>`
             filter: blur(125px);
             
             border-radius: 50%;
-            transition: all 0.1s ease-in-out;
+            transition: all 0.05s ease-in-out;
 
         }
         
