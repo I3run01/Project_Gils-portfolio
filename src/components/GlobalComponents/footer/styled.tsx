@@ -116,7 +116,7 @@ export const FooterStyled = styled.div<props>`
 
                     ::after {
                         content: ' :';
-                        color: black;
+                        color: ${props => props.theme === 'dark' ? fontColorDark : fontColorLight};
                     }
                 }
             }
