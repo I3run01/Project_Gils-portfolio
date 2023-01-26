@@ -76,9 +76,11 @@ export const GilsServices = () => {
                 changeWorkRight={changeWorkRight}/>
             <MainStyled>
                 <AboutJob
-                    title='Professora conteúdista'
-                    subtitile='O que faz uma professora conteúdista?'
-                    description="Uma professora conteudista é responsável por desenvolver o conteúdo de ensino e as estratégias de ensino para uma determinada disciplina ou área de estudo. Isso inclui a seleção e adaptação de materiais de ensino, a elaboração de planos de aula e a avaliação do progresso dos alunos. Ela também pode fornecer orientação e treinamento a outros professores, ajudando-os a implementar o conteúdo e as estratégias de ensino de maneira eficaz."
+                    title='Prestadora de serviços'
+                    subtitile='O que faz um prestador de serviços?'
+                    description="Um prestador de serviços é uma pessoa ou empresa que oferece um determinado tipo de serviço para outras pessoas ou empresas. Este tipo de serviço pode ser de qualquer natureza, incluindo serviços financeiros, legais, contábeis, de tecnologia, de saúde, de transporte, de limpeza, entre outros.
+
+                    Os prestadores de serviços geralmente possuem habilidades e conhecimentos específicos em seu campo de atuação, e são responsáveis por fornecer esses serviços de maneira eficiente e de acordo com as necessidades e expectativas dos seus clientes. Eles também podem ser responsáveis pela manutenção de registros e documentação, bem como pela comunicação com os clientes para garantir a satisfação e o sucesso do serviço prestado."
                 />
                 <WorksTypes
                     title={servicesObj[index].title}
