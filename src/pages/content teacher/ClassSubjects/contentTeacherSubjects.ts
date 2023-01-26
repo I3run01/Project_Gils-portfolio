@@ -116,14 +116,14 @@ export const contentTeacherObj = [
     new contentTeacherSubjects (
         'Front-End',
         'contentTeacher/Front-end/icon.svg',
-        'contentTeacher/Front-end/icon.svg',
+        'contentTeacher/Front-end/image.png',
         `A programação front-end, também conhecida como "desenvolvimento web client-side", é a prática de criar a interface do usuário (UI) e a interação do usuário (UX) de um site ou aplicativo web. Isso inclui a criação de elementos visuais como botões, menus, formulários e outros componentes, bem como a programação da lógica de como esses elementos se comportam e se comunicam com o usuário. A programação front-end geralmente é feita usando linguagens de marcação, como HTML, CSS e JavaScript, e frameworks e bibliotecas, como AngularJS, React e Vue.js.`,
         [],
         {
-            colorRight_1: '#03733F',
-            colorRight_2: '#365943',
-            colorLeft_1: '#F2916D',
-            colorLeft_2: '#BF4A3F',
+            colorRight_1: '#727273',
+            colorRight_2: '#3A8C75',
+            colorLeft_1: '#F2B872',
+            colorLeft_2: '#DBF2D0',
         }
     ),
 ] 
