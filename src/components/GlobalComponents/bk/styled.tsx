@@ -36,8 +36,9 @@ export const BackgroundStyled = styled.div<props>`
         right: -60vh;
         
         background-color: ${props => props.rightColor_1};
+
         filter: blur(125px);
-        
+
         border-radius: 50%;
         width: 120vh;
         height: 120vh;
@@ -49,8 +50,9 @@ export const BackgroundStyled = styled.div<props>`
             height: 60%;
 
             background-color: ${props => props.rightColor_2};
+
             filter: blur(125px);
-            
+
             border-radius: 50%;
             transition: all 0.05s ease-in-out;
 
@@ -67,9 +69,11 @@ export const BackgroundStyled = styled.div<props>`
         left: -40vh;
 
         background-color: ${props => props.leftColor_1};
+
         filter: blur(125px);
-        
+
         border-radius: 50%;
+        
         width: 80vh;
         height: 80vh;
 
@@ -81,7 +85,7 @@ export const BackgroundStyled = styled.div<props>`
 
             background-color: ${props => props.leftColor_2};
             filter: blur(125px);
-            
+
             border-radius: 50%;
             transition: all 0.05s ease-in-out;
 
@@ -104,7 +108,4 @@ export const BackgroundStyled = styled.div<props>`
             height: 80vw;
         }
     }
-
-
-
 `
