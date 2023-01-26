@@ -88,7 +88,7 @@ export const contentTeacherObj = [
         }
     ),
     new contentTeacherSubjects(
-        'Introdução e desenvolvimento de jogos 2s',
+        'Introdução e desenvolvimento de jogos 2d',
         'contentTeacher/Games 2d introduction/icon.svg',
         'contentTeacher/Games 2d introduction/Image.png',
         `A introdução e desenvolvimento em jogos 2D se referem às etapas de criação de um jogo 2D. A introdução é a primeira fase do processo de desenvolvimento, onde se estabelecem as ideias básicas e objetivos do jogo, enquanto que o desenvolvimento é a fase em que essas ideias são transformadas em um jogo funcional. Isso inclui a criação de personagens, cenários, mecânicas de jogo e programação. O desenvolvimento também inclui a implementação de recursos visuais e sonoros, bem como a otimização do jogo para garantir uma boa performance.`,
