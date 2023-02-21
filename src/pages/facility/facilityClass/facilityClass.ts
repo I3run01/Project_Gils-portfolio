@@ -71,8 +71,8 @@ export const facilityObj = [
         CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência visual de uma página HTML. Ele é usado para controlar coisas como cor de fundo, tipos de letra, espaçamento e posicionamento de elementos na página. As regras CSS são aplicadas a elementos HTML específicos, permitindo que você dê estilo consistente a toda a sua página ou site.`,
         [],
         {
-            colorRight_1: '#F2D091',
-            colorRight_2: '#F29D35',
+            colorRight_1: '#bfa575',
+            colorRight_2: '#ac7026',
             colorLeft_1: '#BF382C',
             colorLeft_2: '#593A15',
         }

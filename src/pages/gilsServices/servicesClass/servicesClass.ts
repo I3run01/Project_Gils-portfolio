@@ -70,8 +70,8 @@ export const servicesObj = [
         `,
         [],
         {
-            colorRight_1: '#F2EEB6',
-            colorRight_2: '#BF754B',
+            colorRight_1: '#b8b488',
+            colorRight_2: '#aa6742',
             colorLeft_1: '#F24405',
             colorLeft_2: '#A65F46',
         }
