@@ -101,7 +101,7 @@ export const Jobs = [
     ),
     new Experince(
         'Discovery Talents Education',
-        '',
+        'businessIcons/DTE.png',
         [
             {
                 job: "Coordenadora Técnica Pedagógica de Robótica",
@@ -143,7 +143,7 @@ export const Jobs = [
     ),
     new Experince(
         'Dream School Brasil',
-        '',
+        'businessIcons/DS.png',
         [
             {
                 job: 'Coordenadora Educacional',
