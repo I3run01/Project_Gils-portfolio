@@ -201,7 +201,7 @@ export const Jobs = [
     ),
     new Experince(
         'Info Brasil',
-        '',
+        'businessIcons/info Brasil.png',
         [
             {
                 job: 'Instrutora de cursos profissionalizantes',
